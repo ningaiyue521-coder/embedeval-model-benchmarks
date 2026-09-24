@@ -1,0 +1,17 @@
+EmbedEval Model Benchmarks
+Personal benchmark records and a manual scoring adapter, 2026.
+
+This work includes prompts derived from EmbedEval by Ecro and contributors.
+Source: https://github.com/Ecro/embedeval
+Pinned revision: fdbcb9b93476149cce2d395532bf5164811fe053
+Upstream license: Apache License, Version 2.0 (see LICENSE).
+
+The local adapter selects public Bugfix variants and invokes the unchanged
+upstream L0/L3 checker logic. This is not the official EmbedEval leaderboard.
+The publication adds sanitized result exports, integrity verification,
+documentation, and a portable local web scorer. Upstream source is fetched
+separately at the pinned revision; CRLF formatting reproduces recorded hashes.
+
+Model final answers are preserved as research artifacts. Existing notices in
+those answers are retained. No account data, credentials, model reasoning text,
+or original transport logs are distributed in this repository.
