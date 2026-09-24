@@ -1,0 +1,43 @@
+{
+  "status": "paused_by_user",
+  "automaticResume": false,
+  "rows": [
+    {
+      "round": "paused-xhigh-614",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "graded": 143,
+      "total": 614,
+      "passed": 132,
+      "complete": false,
+      "score": null,
+      "tokens": {
+        "input_tokens": 723063,
+        "cached_input_tokens": 236544,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 93562,
+        "reasoning_output_tokens": 23304
+      },
+      "transportWarningCases": 45
+    },
+    {
+      "round": "paused-xhigh-614",
+      "model": "gpt-6-sol",
+      "effort": "xhigh",
+      "graded": 157,
+      "total": 614,
+      "passed": 144,
+      "complete": false,
+      "score": null,
+      "tokens": {
+        "input_tokens": 797003,
+        "cached_input_tokens": 325248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 113048,
+        "reasoning_output_tokens": 32819
+      },
+      "transportWarningCases": 84
+    }
+  ],
+  "gpt56SolXhigh": "not_invoked"
+}

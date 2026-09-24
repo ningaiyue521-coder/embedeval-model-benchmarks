@@ -1,0 +1,69 @@
+{
+  "totalAnswers": 3750,
+  "modelCallsDuringExport": 0,
+  "rulesUnchanged": true,
+  "rawAnswersUnchanged": true,
+  "rounds": [
+    {
+      "round": "starter-10",
+      "answers": 380,
+      "uniqueSourceSessionsVerified": 380,
+      "sourceAuditErrors": 0,
+      "firstAnswerHashesVerified": 380,
+      "manualOrHarnessReinvocations": 0,
+      "strictSingleNetworkRequestVerified": false,
+      "transportWarningCases": 0,
+      "answerFile": "answers/starter-10.jsonl",
+      "answerFileSha256": "f435c4d339e616ab14cc074131398aa6dd2b1f52f6830dc7ccf15106af9b3287"
+    },
+    {
+      "round": "luna-low-614",
+      "answers": 614,
+      "uniqueSourceSessionsVerified": 614,
+      "sourceAuditErrors": 0,
+      "firstAnswerHashesVerified": 614,
+      "manualOrHarnessReinvocations": 0,
+      "strictSingleNetworkRequestVerified": false,
+      "transportWarningCases": 133,
+      "answerFile": "answers/luna-low-614.jsonl",
+      "answerFileSha256": "b8c10dacf72820f11eb776430390d88f20a71035ce05697398d17a5b8723f85f"
+    },
+    {
+      "round": "sol55astra-low-614",
+      "answers": 1842,
+      "uniqueSourceSessionsVerified": 1842,
+      "sourceAuditErrors": 0,
+      "firstAnswerHashesVerified": 1842,
+      "manualOrHarnessReinvocations": 0,
+      "strictSingleNetworkRequestVerified": false,
+      "transportWarningCases": 946,
+      "answerFile": "answers/sol55astra-low-614.jsonl",
+      "answerFileSha256": "300fa3caa6d6f61b884cbb1a0e883215f3eef8835b39ef2ce208c2c53a4c9934"
+    },
+    {
+      "round": "56sol-low-614",
+      "answers": 614,
+      "uniqueSourceSessionsVerified": 614,
+      "sourceAuditErrors": 0,
+      "firstAnswerHashesVerified": 614,
+      "manualOrHarnessReinvocations": 0,
+      "strictSingleNetworkRequestVerified": false,
+      "transportWarningCases": 304,
+      "answerFile": "answers/56sol-low-614.jsonl",
+      "answerFileSha256": "3531882f6330221b437eaeee0c883289564514849c0f2f2bc6d8d665ac2bfd90"
+    },
+    {
+      "round": "paused-xhigh-614",
+      "answers": 300,
+      "uniqueSourceSessionsVerified": 300,
+      "sourceAuditErrors": 0,
+      "firstAnswerHashesVerified": 300,
+      "manualOrHarnessReinvocations": 0,
+      "strictSingleNetworkRequestVerified": false,
+      "transportWarningCases": 129,
+      "answerFile": "answers/paused-xhigh-614.jsonl",
+      "answerFileSha256": "63b853220134fffcac80be12b5b760e60bdca227867e6b83eedb7bdbc4a59396"
+    }
+  ],
+  "scope": "Local source audit and reproducible artifact hashes; not a third-party attestation."
+}

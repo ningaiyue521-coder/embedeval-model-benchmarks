@@ -1,0 +1,34 @@
+{
+  "rounds": [
+    {
+      "round": "luna-low-614",
+      "wallSeconds": 1404.0,
+      "concurrency": "4 -> 16 -> 32 -> 48 -> 64",
+      "sharedAccountUsedPercentBefore": 57,
+      "sharedAccountUsedPercentAfter": 59,
+      "sharedAccountUsedChangePercentagePoints": 2
+    },
+    {
+      "round": "sol55astra-low-614",
+      "wallSeconds": 1762.0,
+      "concurrency": "64 shared across this round",
+      "sharedAccountUsedPercentBefore": 59,
+      "sharedAccountUsedPercentAfter": 75,
+      "sharedAccountUsedChangePercentagePoints": 16
+    },
+    {
+      "round": "56sol-low-614",
+      "wallSeconds": 586.0,
+      "concurrency": "64 shared across this round",
+      "sharedAccountUsedPercentBefore": 80,
+      "sharedAccountUsedPercentAfter": 83,
+      "sharedAccountUsedChangePercentagePoints": 3
+    }
+  ],
+  "notes": [
+    "Account percentages are shared and rounded, not precise per-model billing.",
+    "Output tokens include reasoning. Cached input is a subset of input.",
+    "CLI time includes startup and transport; wall times use different concurrency allocations.",
+    "Luna wall time includes local recording recovery pauses."
+  ]
+}

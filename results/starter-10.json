@@ -1,0 +1,689 @@
+{
+  "date": "2026-09-24",
+  "rows": [
+    {
+      "round": "starter-10",
+      "model": "gpt-5.5",
+      "effort": "high",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 24108,
+        "cached_input_tokens": 3072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13048,
+        "reasoning_output_tokens": 8295
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.5",
+      "effort": "low",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 24108,
+        "cached_input_tokens": 7680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5693,
+        "reasoning_output_tokens": 1094
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.5",
+      "effort": "medium",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 24108,
+        "cached_input_tokens": 6144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6438,
+        "reasoning_output_tokens": 1843
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.5",
+      "effort": "xhigh",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 24108,
+        "cached_input_tokens": 7680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 21757,
+        "reasoning_output_tokens": 17135
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 29708,
+        "cached_input_tokens": 1792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9330,
+        "reasoning_output_tokens": 4748
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-luna",
+      "effort": "low",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 29708,
+        "cached_input_tokens": 1792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6303,
+        "reasoning_output_tokens": 1628
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-luna",
+      "effort": "max",
+      "graded": 10,
+      "total": 10,
+      "passed": 9,
+      "complete": true,
+      "score": 90.0,
+      "tokens": {
+        "input_tokens": 29708,
+        "cached_input_tokens": 1792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20448,
+        "reasoning_output_tokens": 15914
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-luna",
+      "effort": "medium",
+      "graded": 10,
+      "total": 10,
+      "passed": 9,
+      "complete": true,
+      "score": 90.0,
+      "tokens": {
+        "input_tokens": 29708,
+        "cached_input_tokens": 1792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6927,
+        "reasoning_output_tokens": 2404
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-luna",
+      "effort": "xhigh",
+      "graded": 10,
+      "total": 10,
+      "passed": 9,
+      "complete": true,
+      "score": 90.0,
+      "tokens": {
+        "input_tokens": 29708,
+        "cached_input_tokens": 1792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17827,
+        "reasoning_output_tokens": 13080
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 20736,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6591,
+        "reasoning_output_tokens": 1999
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-sol",
+      "effort": "low",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 20736,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5895,
+        "reasoning_output_tokens": 1084
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-sol",
+      "effort": "max",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 4608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8672,
+        "reasoning_output_tokens": 4140
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-sol",
+      "effort": "medium",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 18432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6318,
+        "reasoning_output_tokens": 1658
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-sol",
+      "effort": "ultra",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 216388,
+        "cached_input_tokens": 145920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15841,
+        "reasoning_output_tokens": 9016
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-sol",
+      "effort": "xhigh",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 4608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7663,
+        "reasoning_output_tokens": 3067
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-terra",
+      "effort": "high",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 15104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7916,
+        "reasoning_output_tokens": 3309
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 20224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4660,
+        "reasoning_output_tokens": 99
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-terra",
+      "effort": "max",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 7680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20809,
+        "reasoning_output_tokens": 16329
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-terra",
+      "effort": "medium",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 20224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6188,
+        "reasoning_output_tokens": 1548
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-terra",
+      "effort": "ultra",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 304127,
+        "cached_input_tokens": 219392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 32052,
+        "reasoning_output_tokens": 25835
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-5.6-terra",
+      "effort": "xhigh",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 44798,
+        "cached_input_tokens": 24320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6438,
+        "reasoning_output_tokens": 1914
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5614,
+        "reasoning_output_tokens": 859
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-astra",
+      "effort": "low",
+      "graded": 10,
+      "total": 10,
+      "passed": 6,
+      "complete": true,
+      "score": 60.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 21504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5249,
+        "reasoning_output_tokens": 235
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-astra",
+      "effort": "max",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 2688,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10268,
+        "reasoning_output_tokens": 5582
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5321,
+        "reasoning_output_tokens": 468
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-astra",
+      "effort": "ultra",
+      "graded": 10,
+      "total": 10,
+      "passed": 9,
+      "complete": true,
+      "score": 90.0,
+      "tokens": {
+        "input_tokens": 98446,
+        "cached_input_tokens": 37632,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9051,
+        "reasoning_output_tokens": 3771
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "graded": 10,
+      "total": 10,
+      "passed": 9,
+      "complete": true,
+      "score": 90.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 5376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8877,
+        "reasoning_output_tokens": 4186
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 20480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8073,
+        "reasoning_output_tokens": 3367
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "graded": 10,
+      "total": 10,
+      "passed": 10,
+      "complete": true,
+      "score": 100.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 26112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4565,
+        "reasoning_output_tokens": 0
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-luna",
+      "effort": "max",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 5632,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14725,
+        "reasoning_output_tokens": 9889
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "graded": 10,
+      "total": 10,
+      "passed": 10,
+      "complete": true,
+      "score": 100.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 24064,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4570,
+        "reasoning_output_tokens": 0
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 9472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12701,
+        "reasoning_output_tokens": 7969
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 21504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8402,
+        "reasoning_output_tokens": 3696
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 21504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5093,
+        "reasoning_output_tokens": 580
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-sol",
+      "effort": "max",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 10752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10959,
+        "reasoning_output_tokens": 6287
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7043,
+        "reasoning_output_tokens": 2350
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-sol",
+      "effort": "ultra",
+      "graded": 10,
+      "total": 10,
+      "passed": 8,
+      "complete": true,
+      "score": 80.0,
+      "tokens": {
+        "input_tokens": 114458,
+        "cached_input_tokens": 53888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18954,
+        "reasoning_output_tokens": 13424
+      },
+      "transportWarningCases": 0
+    },
+    {
+      "round": "starter-10",
+      "model": "gpt-6-sol",
+      "effort": "xhigh",
+      "graded": 10,
+      "total": 10,
+      "passed": 7,
+      "complete": true,
+      "score": 70.0,
+      "tokens": {
+        "input_tokens": 50108,
+        "cached_input_tokens": 2688,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9607,
+        "reasoning_output_tokens": 4856
+      },
+      "transportWarningCases": 0
+    }
+  ]
+}
