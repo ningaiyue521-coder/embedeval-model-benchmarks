@@ -59,8 +59,22 @@ def verify():
             key = (model['model'], effort)
             if key in results:
                 require(model[effort]['passed'] == results[key], f'Summary mismatch: {key}')
+    partial = read('results/partial-terra-low-20260928.json')
+    partial_file = (ROOT / partial['answerFile']).resolve()
+    require(partial_file.is_relative_to((ROOT / 'answers').resolve()), 'Partial answer path')
+    require(sha(partial_file.read_bytes()) == partial['answerFileSha256'], 'Partial file hash')
+    partial_rows = [json.loads(line) for line in partial_file.read_text(encoding='utf-8').splitlines()]
+    require(len(partial_rows) == partial['firstAnswers'] == 127, 'Partial count')
+    require(sum(row['passed'] for row in partial_rows) == partial['passed'] == 99, 'Partial pass count')
+    seen = set()
+    for row in partial_rows:
+        case = cases[row['ordinal'] - 1]
+        require(row['caseKey'] == case['key'] and row['caseKey'] not in seen, 'Partial case')
+        seen.add(row['caseKey'])
+        require(row['attempt'] == 1 and sha(row['firstAnswer'].encode('utf-8')) == row['answerHash'], 'Partial answer')
+        require(row['passed'] == all(c['passed'] for c in row['checks']) and bool(row['checks']), 'Partial grade')
     return {'ok': True, 'questions': 614, 'newFirstAnswers': 4298, 'groups': 7,
-            'formatErrorsCountedZero': 1, 'modelCalls': 0}
+            'partialTerraFirstAnswers': 127, 'formatErrorsCountedZero': 1, 'modelCalls': 0}
 
 if __name__ == '__main__':
     print(json.dumps(verify(), ensure_ascii=False, indent=2))
