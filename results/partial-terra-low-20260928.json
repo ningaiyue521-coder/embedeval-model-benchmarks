@@ -1,0 +1,13 @@
+{
+  "status": "stopped by user; partial results only, not ranked",
+  "model": "gpt-5.6-terra",
+  "effort": "low",
+  "sourceRun": "gpt56-terra-luna-low-614-20260928",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "totalQuestions": 614,
+  "firstAnswers": 127,
+  "passed": 99,
+  "answerFile": "answers/20260928-gpt-5.6-terra-low-partial.jsonl",
+  "answerFileSha256": "918ef0e72ebf157fef2097f69c5da780208cd603ca86b823f93f789d9f4baa5a",
+  "attemptsPerQuestion": 1
+}
