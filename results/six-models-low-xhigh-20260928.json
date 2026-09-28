@@ -1,0 +1,480 @@
+{
+  "generatedAt": "2026-09-28T14:35:33+08:00",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "manifestHash": "208c6f8b5ec8e1a203854e1bc631b78884edf081001cdf2919f4d1b8a874a8d5",
+  "questionsPerCombination": 614,
+  "combinations": 12,
+  "verifiedFirstAnswers": 7368,
+  "integrityErrors": 0,
+  "formatFailuresCountedZero": 1,
+  "formatFailureCases": [
+    {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "run": "gpt55-luna-xhigh-614-20260928",
+      "ordinal": 266,
+      "caseKey": "08e0e272e5ee42844c2f",
+      "answerHash": "09eba5408c01574ecdf83ae9ccc25de88348a12f5be1af03b6aa365b74b22731",
+      "scoring": "format error, counted as 0; no second model invocation"
+    }
+  ],
+  "accountWeeklyUsedPercentBefore": 20,
+  "accountWeeklyUsedPercentAfter": 22,
+  "accountUsageNote": "Shared rounded account usage in the same weekly window during this GPT-5.6 Luna Low continuation and xhigh run; includes any other account activity and cannot be attributed exactly to a model.",
+  "models": [
+    {
+      "low": {
+        "run": "gpt-sol55astra-low-614-20260924",
+        "passed": 559,
+        "score": 91.04,
+        "meanSeconds": 64.05,
+        "medianSeconds": 63.62,
+        "p95Seconds": 92.88,
+        "tokens": {
+          "input_tokens": 3040257,
+          "cached_input_tokens": 1498880,
+          "output_tokens": 252940,
+          "reasoning_output_tokens": 14991
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 369
+      },
+      "xhigh": {
+        "run": "gpt6-sol-astra-xhigh-614-20260924",
+        "passed": 564,
+        "score": 91.86,
+        "meanSeconds": 50.52,
+        "medianSeconds": 48.63,
+        "p95Seconds": 76.73,
+        "tokens": {
+          "input_tokens": 3042794,
+          "cached_input_tokens": 1216640,
+          "output_tokens": 353182,
+          "reasoning_output_tokens": 115670
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 220
+      },
+      "model": "gpt-6-astra",
+      "transition": {
+        "failedToPassed": 9,
+        "passedToFailed": 4,
+        "bothPassed": 555,
+        "bothFailed": 46
+      },
+      "changePoints": 0.81
+    },
+    {
+      "low": {
+        "run": "gpt-sol55astra-low-614-20260924",
+        "passed": 533,
+        "score": 86.81,
+        "meanSeconds": 54.38,
+        "medianSeconds": 53.52,
+        "p95Seconds": 80.76,
+        "tokens": {
+          "input_tokens": 3040257,
+          "cached_input_tokens": 1502336,
+          "output_tokens": 262608,
+          "reasoning_output_tokens": 26552
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 322
+      },
+      "xhigh": {
+        "run": "gpt6-sol-astra-xhigh-614-20260924",
+        "passed": 542,
+        "score": 88.27,
+        "meanSeconds": 46.31,
+        "medianSeconds": 44.27,
+        "p95Seconds": 74.53,
+        "tokens": {
+          "input_tokens": 3042713,
+          "cached_input_tokens": 1434496,
+          "output_tokens": 382380,
+          "reasoning_output_tokens": 145521
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 270
+      },
+      "model": "gpt-6-sol",
+      "transition": {
+        "failedToPassed": 17,
+        "passedToFailed": 8,
+        "bothPassed": 525,
+        "bothFailed": 64
+      },
+      "changePoints": 1.47
+    },
+    {
+      "low": {
+        "run": "gpt-sol55astra-low-614-20260924",
+        "passed": 521,
+        "score": 84.85,
+        "meanSeconds": 54.15,
+        "medianSeconds": 53.17,
+        "p95Seconds": 80.17,
+        "tokens": {
+          "input_tokens": 1443857,
+          "cached_input_tokens": 910848,
+          "output_tokens": 323460,
+          "reasoning_output_tokens": 87006
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 255
+      },
+      "xhigh": {
+        "run": "gpt55-luna-xhigh-614-20260928",
+        "passed": 541,
+        "score": 88.11,
+        "meanSeconds": 53.02,
+        "medianSeconds": 47.4,
+        "p95Seconds": 105.39,
+        "tokens": {
+          "input_tokens": 1445085,
+          "cached_input_tokens": 915456,
+          "output_tokens": 860574,
+          "reasoning_output_tokens": 623767
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 304
+      },
+      "model": "gpt-5.5",
+      "transition": {
+        "failedToPassed": 28,
+        "passedToFailed": 8,
+        "bothPassed": 513,
+        "bothFailed": 65
+      },
+      "changePoints": 3.26
+    },
+    {
+      "low": {
+        "run": "gpt56-sol-low-614-20260924",
+        "passed": 515,
+        "score": 83.88,
+        "meanSeconds": 55.18,
+        "medianSeconds": 54.62,
+        "p95Seconds": 83.19,
+        "tokens": {
+          "input_tokens": 2712995,
+          "cached_input_tokens": 1384960,
+          "output_tokens": 278497,
+          "reasoning_output_tokens": 42273
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 304
+      },
+      "xhigh": {
+        "run": "gpt56-sol-xhigh-614-20260928",
+        "passed": 533,
+        "score": 86.81,
+        "meanSeconds": 43.33,
+        "medianSeconds": 44.0,
+        "p95Seconds": 62.66,
+        "tokens": {
+          "input_tokens": 2714223,
+          "cached_input_tokens": 1326464,
+          "output_tokens": 341694,
+          "reasoning_output_tokens": 105546
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 220
+      },
+      "model": "gpt-5.6-sol",
+      "transition": {
+        "failedToPassed": 22,
+        "passedToFailed": 4,
+        "bothPassed": 511,
+        "bothFailed": 77
+      },
+      "changePoints": 2.93
+    },
+    {
+      "low": {
+        "run": "gpt6-luna-low-614-20260924",
+        "passed": 493,
+        "score": 80.29,
+        "meanSeconds": 39.1,
+        "medianSeconds": 36.32,
+        "p95Seconds": 64.98,
+        "tokens": {
+          "input_tokens": 3040257,
+          "cached_input_tokens": 2291200,
+          "output_tokens": 234078,
+          "reasoning_output_tokens": 0
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 133
+      },
+      "xhigh": {
+        "run": "gpt55-luna-xhigh-614-20260928",
+        "passed": 498,
+        "score": 81.11,
+        "meanSeconds": 44.92,
+        "medianSeconds": 43.11,
+        "p95Seconds": 75.08,
+        "tokens": {
+          "input_tokens": 3038062,
+          "cached_input_tokens": 2269696,
+          "output_tokens": 532189,
+          "reasoning_output_tokens": 295145
+        },
+        "formatFailuresCountedZero": 1,
+        "transportWarningCases": 286
+      },
+      "model": "gpt-6-luna",
+      "transition": {
+        "failedToPassed": 36,
+        "passedToFailed": 31,
+        "bothPassed": 462,
+        "bothFailed": 85
+      },
+      "changePoints": 0.81
+    },
+    {
+      "low": {
+        "run": "gpt56-terra-luna-low-614-20260928",
+        "passed": 480,
+        "score": 78.18,
+        "meanSeconds": 50.9,
+        "medianSeconds": 49.78,
+        "p95Seconds": 77.7,
+        "tokens": {
+          "input_tokens": 1790153,
+          "cached_input_tokens": 889344,
+          "output_tokens": 310898,
+          "reasoning_output_tokens": 75780
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 318
+      },
+      "xhigh": {
+        "run": "gpt56-luna-xhigh-614-20260928",
+        "passed": 486,
+        "score": 79.15,
+        "meanSeconds": 52.49,
+        "medianSeconds": 49.59,
+        "p95Seconds": 84.62,
+        "tokens": {
+          "input_tokens": 1788925,
+          "cached_input_tokens": 866560,
+          "output_tokens": 548618,
+          "reasoning_output_tokens": 312952
+        },
+        "formatFailuresCountedZero": 0,
+        "transportWarningCases": 291
+      },
+      "model": "gpt-5.6-luna",
+      "transition": {
+        "failedToPassed": 20,
+        "passedToFailed": 14,
+        "bothPassed": 466,
+        "bothFailed": 114
+      },
+      "changePoints": 0.98
+    }
+  ],
+  "pairwiseXhigh": [
+    {
+      "higherRanked": "gpt-6-astra",
+      "other": "gpt-6-sol",
+      "higherOnly": 26,
+      "otherOnly": 4,
+      "bothPassed": 538,
+      "bothFailed": 46
+    },
+    {
+      "higherRanked": "gpt-6-astra",
+      "other": "gpt-5.5",
+      "higherOnly": 32,
+      "otherOnly": 9,
+      "bothPassed": 532,
+      "bothFailed": 41
+    },
+    {
+      "higherRanked": "gpt-6-astra",
+      "other": "gpt-5.6-sol",
+      "higherOnly": 36,
+      "otherOnly": 5,
+      "bothPassed": 528,
+      "bothFailed": 45
+    },
+    {
+      "higherRanked": "gpt-6-astra",
+      "other": "gpt-6-luna",
+      "higherOnly": 72,
+      "otherOnly": 6,
+      "bothPassed": 492,
+      "bothFailed": 44
+    },
+    {
+      "higherRanked": "gpt-6-astra",
+      "other": "gpt-5.6-luna",
+      "higherOnly": 86,
+      "otherOnly": 8,
+      "bothPassed": 478,
+      "bothFailed": 42
+    },
+    {
+      "higherRanked": "gpt-6-sol",
+      "other": "gpt-5.5",
+      "higherOnly": 14,
+      "otherOnly": 13,
+      "bothPassed": 528,
+      "bothFailed": 59
+    },
+    {
+      "higherRanked": "gpt-6-sol",
+      "other": "gpt-5.6-sol",
+      "higherOnly": 22,
+      "otherOnly": 13,
+      "bothPassed": 520,
+      "bothFailed": 59
+    },
+    {
+      "higherRanked": "gpt-6-sol",
+      "other": "gpt-6-luna",
+      "higherOnly": 54,
+      "otherOnly": 10,
+      "bothPassed": 488,
+      "bothFailed": 62
+    },
+    {
+      "higherRanked": "gpt-6-sol",
+      "other": "gpt-5.6-luna",
+      "higherOnly": 70,
+      "otherOnly": 14,
+      "bothPassed": 472,
+      "bothFailed": 58
+    },
+    {
+      "higherRanked": "gpt-5.5",
+      "other": "gpt-5.6-sol",
+      "higherOnly": 21,
+      "otherOnly": 13,
+      "bothPassed": 520,
+      "bothFailed": 60
+    },
+    {
+      "higherRanked": "gpt-5.5",
+      "other": "gpt-6-luna",
+      "higherOnly": 50,
+      "otherOnly": 7,
+      "bothPassed": 491,
+      "bothFailed": 66
+    },
+    {
+      "higherRanked": "gpt-5.5",
+      "other": "gpt-5.6-luna",
+      "higherOnly": 64,
+      "otherOnly": 9,
+      "bothPassed": 477,
+      "bothFailed": 64
+    },
+    {
+      "higherRanked": "gpt-5.6-sol",
+      "other": "gpt-6-luna",
+      "higherOnly": 53,
+      "otherOnly": 18,
+      "bothPassed": 480,
+      "bothFailed": 63
+    },
+    {
+      "higherRanked": "gpt-5.6-sol",
+      "other": "gpt-5.6-luna",
+      "higherOnly": 62,
+      "otherOnly": 15,
+      "bothPassed": 471,
+      "bothFailed": 66
+    },
+    {
+      "higherRanked": "gpt-6-luna",
+      "other": "gpt-5.6-luna",
+      "higherOnly": 30,
+      "otherOnly": 18,
+      "bothPassed": 468,
+      "bothFailed": 98
+    }
+  ],
+  "distribution": {
+    "sdk": [
+      {
+        "name": "embedded-linux",
+        "questions": 569,
+        "xhighPassed": {
+          "gpt-6-astra": 522,
+          "gpt-6-sol": 500,
+          "gpt-5.5": 498,
+          "gpt-5.6-sol": 491,
+          "gpt-6-luna": 457,
+          "gpt-5.6-luna": 444
+        }
+      },
+      {
+        "name": "esp-idf",
+        "questions": 2,
+        "xhighPassed": {
+          "gpt-6-astra": 2,
+          "gpt-6-sol": 2,
+          "gpt-5.5": 2,
+          "gpt-5.6-sol": 2,
+          "gpt-6-luna": 2,
+          "gpt-5.6-luna": 2
+        }
+      },
+      {
+        "name": "zephyr",
+        "questions": 43,
+        "xhighPassed": {
+          "gpt-6-astra": 40,
+          "gpt-6-sol": 40,
+          "gpt-5.5": 41,
+          "gpt-5.6-sol": 40,
+          "gpt-6-luna": 39,
+          "gpt-5.6-luna": 40
+        }
+      }
+    ],
+    "difficulty": [
+      {
+        "name": "easy",
+        "questions": 30,
+        "xhighPassed": {
+          "gpt-6-astra": 29,
+          "gpt-6-sol": 27,
+          "gpt-5.5": 26,
+          "gpt-5.6-sol": 28,
+          "gpt-6-luna": 24,
+          "gpt-5.6-luna": 25
+        }
+      },
+      {
+        "name": "hard",
+        "questions": 364,
+        "xhighPassed": {
+          "gpt-6-astra": 333,
+          "gpt-6-sol": 319,
+          "gpt-5.5": 319,
+          "gpt-5.6-sol": 311,
+          "gpt-6-luna": 293,
+          "gpt-5.6-luna": 287
+        }
+      },
+      {
+        "name": "medium",
+        "questions": 220,
+        "xhighPassed": {
+          "gpt-6-astra": 202,
+          "gpt-6-sol": 196,
+          "gpt-5.5": 196,
+          "gpt-5.6-sol": 194,
+          "gpt-6-luna": 181,
+          "gpt-5.6-luna": 174
+        }
+      }
+    ]
+  },
+  "scoringScope": "仅官方 L0 静态检查 + L3 规则检查；未编译、未仿真、未实机验证",
+  "scopedLowContinuation": "GPT-5.6 Luna continued from 121 preserved first answers in gpt56-terra-luna-low-614-20260928; GPT-5.6 Terra remains at 127 and is excluded."
+}
