@@ -8,7 +8,7 @@ Python 3.12+，不需要模型、密钥、上游代码或第三方依赖：
 python verify_results.py
 ```
 
-核验 614 个提示哈希、3,750 份答案哈希、唯一键、原始逐项通过结果、token 汇总、完整 Low 成绩、首轮矩阵、暂停状态和导出文件哈希。脚本不修改答案、分数或数据库。
+核验原有 614 个提示哈希、3,750 份历史存档答案哈希、唯一键、逐项结果、token 汇总、首轮矩阵与导出文件哈希。新增六模型轮次另运行 `python verify_six_models.py`，核验新增 4,298 份首次答案；两者均不修改答案、分数或数据库。历史存档中的 300 份暂停极高答案已被完整轮次覆盖，不重复计入当前六模型总数。
 
 ## 2. 安装上游检查器，离线复评分
 
@@ -43,6 +43,19 @@ python server.py --port 8767
 
 新轮次可使用独立数据库，例如 `python server.py --port 8767 --db my-new-round.sqlite3`。这是主动启动新的实验，不能用来为已经发布的一轮刷高分。网页只显示当前本地数据库，历史成绩通过 README 与 `results/` 查看。
 
-## 4. 复现边界
+## 4. 用 Codex CLI 启动新的批量轮次
 
-评分器和数据核验可离线复现。历史模型响应、服务端快照、传输恢复、缓存和账户百分比不能离线重建。此发布包没有自动批量调用模型的入口；原批次运行方式记录在方法文档及协议中。下载或核验仓库不会恢复已暂停的 Xhigh 测试。
+安装上述依赖与上游检查器后，在已登录 Codex CLI 的电脑上执行：
+
+```bash
+python batch_runner.py doctor
+python batch_runner.py prepare --run my-new-round --models gpt-6-luna --efforts low
+python batch_runner.py run --run my-new-round --workers 4
+python batch_runner.py status --run my-new-round
+```
+
+`doctor`、`prepare`、`status` 不调用模型。`run` 才会消耗账户额度；每道题启动独立临时会话，只采用首次答案，任何失败的尝试都会保留并锁定。准备多个模型或档位可在 `--models`、`--efforts` 后逐一列出；不要为旧轮次换名重答。运行期间可用 `python batch_runner.py pause --run my-new-round` 请求暂停，已启动的问题会完成。所有新结果保存在本地 `.runs/`，默认不会上传到 GitHub。请确认当前账户确实支持所选模型及档位，不要自动替换型号。
+
+## 5. 复现边界
+
+评分器和数据核验可离线复现。历史模型响应的传输过程、服务端快照、缓存和账户百分比不能离线重建。下载或核验仓库不会自动恢复旧轮次，也不会调用模型。
