@@ -1,93 +1,45 @@
 # 大模型嵌入式代码修复实测
 
-基于 [EmbedEval](https://github.com/Ecro/embedeval) 公开 Bugfix 题库，记录各模型的首次完整答案、规则分、耗时与 token 用量。测试日期：**2026-09-24**。
+基于 [EmbedEval](https://github.com/Ecro/embedeval) 的固定版本 Bugfix 题库，对 614 道公开变体进行逐题新会话测试。每题只采纳模型首次完整答案；通过固定 L0 静态检查和 L3 规则检查计 10 分，否则 0 分，最终折算为百分制。**没有编译、仿真或实机验证，规则分不能等同真实修复率。** 这不是 EmbedEval 官方榜单。[判题器局限](docs/grader-limitations.md)
 
-**评分范围：固定版本的 L0 静态检查 + L3 启发式规则检查。未编译、未仿真、未实机验证。这是个人实测记录，不是 EmbedEval 官方榜单，也不能直接代表完整编码能力。** [判题器已知局限](docs/grader-limitations.md)
+## 六模型 Low 与极高档：各 614 题
 
-## 614 题完整成绩 · Low 档
+| 模型 | Low 通过 / 614 | Low 分 | 极高通过 / 614 | 极高分 |
+|---|---:|---:|---:|---:|
+| GPT-6 Astra | 559 | 91.04 | 564 | 91.86 |
+| GPT-6 Sol | 533 | 86.81 | 542 | 88.27 |
+| GPT-5.5 | 521 | 84.85 | 541 | 88.11 |
+| GPT-5.6 Sol | 515 | 83.88 | 533 | 86.81 |
+| GPT-6 Luna | 493 | 80.29 | 498 | 81.11 |
+| GPT-5.6 Luna | 480 | 78.18 | 486 | 79.15 |
 
-五个模型使用相同的题面与判题规则，每题新会话，只采用首次完整答案。分数 = 全部规则通过题数 ÷ 614 × 100。
+12 个模型与档位组合，共 **7,368 份完整轮次的首次答案**。GPT-6 Luna 极高有 1 份首次输出格式异常，保留原文并按 0 分计；没有向模型追问。完整的逐题变化、响应时间、token、分组统计、口径见 [对比文档](results/six-models-low-xhigh-20260928.md) 和 [机器可读结果](results/six-models-low-xhigh-20260928.json)。六模型数据包含 2026-09-24 与 2026-09-28 的运行批次；不同批次并发与环境有差异，响应时间不宜直接解释为模型本身速度差。
 
-| 模型 | 规则分 / 100 | 通过 / 614 | 平均 CLI 秒 / 题 | 输入 token（含缓存） | 其中缓存命中 | 输出 token（含推理） |
-|---|---:|---:|---:|---:|---:|---:|
-| GPT-6 Astra | **91.04** | 559 | 41.37 | 3,040,257 | 1,498,880 | 252,940 |
-| GPT-6 Sol | **86.81** | 533 | 34.21 | 3,040,257 | 1,502,336 | 262,608 |
-| GPT-5.5 | **84.85** | 521 | 32.66 | 1,443,857 | 910,848 | 323,460 |
-| GPT-5.6 Sol | **83.88** | 515 | 32.84 | 2,712,995 | 1,384,960 | 278,497 |
-| GPT-6 Luna | **80.29** | 493 | 24.88 | 3,040,257 | 2,291,200 | 234,078 |
+**首次答案存档：**原有 [五个 Low 组合](answers/) 共 3,070 份；新增 [七个组合](results/six-models-answer-audit-20260928.json) 共 4,298 份，每组一个 JSONL，保存原始最终答案、逐项判分、哈希与用量，不含账号快照、会话 ID、认证信息或原始传输日志。此前已暂停的 Sol/Astra 极高 300 份也保留作历史审计，已被完整轮次覆盖，**不重复计入 7,368**。
 
-完整结果共 **3,070 份首次答案**。[机器可读成绩](results/low-614.json)
+另有独立的 [10 题试跑矩阵](results/starter-10.json)：38 个模型与档位组合、380 份首次答案。这一小样本不与 614 题结果混排。早期 SVG 动画与嵌入式问答综合题库未计入本仓库成绩。
 
-### 实际耗时与账户用量
+## 在另一台电脑继续跑新测试
 
-| 批次 | 并发安排 | 整轮墙钟时间 | 账户已用额度变化 |
-|---|---|---:|---:|
-| GPT-6 Luna Low | 从 4 逐步提高到 64 | 23 分 24 秒 | 57% → 59%（+2 个百分点） |
-| GPT-6 Sol / GPT-5.5 / GPT-6 Astra Low | 三模型共享 64 | 29 分 22 秒 | 59% → 75%（+16 个百分点） |
-| GPT-5.6 Sol Low | 单模型 64 | 9 分 46 秒 | 80% → 83%（+3 个百分点） |
+需要 Python 3.12+、已登录的 Codex CLI，以及固定版本的上游检查器。下载仓库后，在仓库目录执行：
 
-账户额度是共享、取整统计，包含控制任务及其他账户活动，**不能当作模型的精确费用**。缓存输入已包含在输入总量中，推理输出已包含在输出总量中。不同批次并发安排不同，Luna 的墙钟时间还包含本地记录恢复暂停，不能据此直接计算模型速度倍数。CLI 耗时包含启动与传输，详见 [测量方法](docs/methodology.md)。
-
-## 首轮 10 题 · 38 个模型与档位组合
-
-这是较早完成的独立试跑轮次，合计 **380 份首次答案**。每题通过全部规则得 10 分，否则 0 分；不能与上面的 614 题结果混排。
-
-| 模型 | Low | Medium | High | Xhigh（极高） | Max | Ultra |
-|---|---:|---:|---:|---:|---:|---:|
-| GPT-5.5 | 80 | 70 | 80 | 80 | — | — |
-| GPT-5.6 Luna | 80 | 90 | 80 | 90 | 90 | — |
-| GPT-5.6 Terra | 80 | 80 | 70 | 80 | 80 | 80 |
-| GPT-5.6 Sol | 80 | 70 | 80 | 70 | 80 | 80 |
-| GPT-6 Luna | 100 | 100 | 80 | 80 | 70 | — |
-| GPT-6 Sol | 70 | 70 | 70 | 70 | 80 | 80 |
-| GPT-6 Astra | 60 | 70 | 70 | 90 | 80 | 90 |
-
-“—”表示当时模型列表不支持该档位。Ultra 获准使用原生子模型协作，仍仅提交一次最终答案；其条件与普通档位存在差别。10 题样本很小，已知规则误判可能使总分一次变化 10 分。[机器可读矩阵](results/starter-10.json)
-
-## 已暂停：614 题 Xhigh 轮次
-
-| 模型 | 已评分 / 614 | 已通过 | 状态 |
-|---|---:|---:|---|
-| GPT-6 Sol Xhigh | 157 / 614 | 144 | 用户暂停，没有全量最终分 |
-| GPT-6 Astra Xhigh | 143 / 614 | 132 | 用户暂停，没有全量最终分 |
-| GPT-5.6 Sol Xhigh | 0 / 614 | — | 未调用 |
-
-保留这 **300 份**已完成答案，不按局部通过率生成全量排名，也不自动继续测试。[暂停记录](results/paused-xhigh.json)
-
-## 数据与评分工具
-
-仓库共收录 **3,750 份首次答案**，按轮次保存；不含账号快照、会话标识、认证信息、原始传输日志或推理文本。
-
-| 路径 | 内容 |
-|---|---|
-| [answers/](answers/) | 五份 JSONL：首次最终答案、逐项结果、哈希、耗时与 token |
-| [data/catalog.json](data/catalog.json) | 冻结的 614 道题面及上游规则哈希 |
-| [data/protocols.json](data/protocols.json) | 各轮题目清单、模型档位、原始候选模型指令 |
-| [results/](results/) | 成绩、用量与导出核验记录 |
-| [docs/methodology.md](docs/methodology.md) | 一次作答规则、测量口径、数据字段 |
-| [docs/reproduce.md](docs/reproduce.md) | 本地核验、离线复评分、网页评分器使用方法 |
-| [bench.py](bench.py) / [server.py](server.py) | 本地规则评分器与首次提交锁定机制 |
-| [verify_results.py](verify_results.py) | 无模型调用的答案、哈希、汇总成绩核验 |
-
-下载仓库后，先用 Python 3.12+ 核验已发布数据，无需模型、API 密钥或第三方依赖：
-
-```bash
-python verify_results.py
-```
-
-安装固定依赖与固定版本上游检查器后，可逐题复现评分，或在网页粘贴其他模型的首次答案：
-
-```bash
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python setup_upstream.py
-python verify_results.py --regrade
-python server.py --port 8767
+python verify_results.py
+python verify_six_models.py
+python batch_runner.py doctor
+python batch_runner.py prepare --run my-new-round --models gpt-6-luna --efforts low
+python batch_runner.py run --run my-new-round --workers 4
+python batch_runner.py status --run my-new-round
 ```
 
-打开 <http://127.0.0.1:8767/>。网页评分器用于新增本地测试，已发布历史成绩从本 README 与 `results/` 查看。评分过程不调用任何大模型，也不执行提交的 C 代码。
+macOS/Linux 用 `source .venv/bin/activate` 激活环境。`prepare` 只建一个全新的本地轮次，不导入历史答案，也不调用模型；`run` 才会消耗 Codex 账户额度。每题启动独立临时会话，第一次尝试即锁定，错误须检查，不能重答刷分。结果写入被 Git 忽略的 `.runs/`。调用前先确认该账户支持指定模型与推理档位。详细说明见 [复现与运行方法](docs/reproduce.md)；也可以用 [网页评分器](server.py) 手动录入其他模型的首次答案。
 
-## 来源与许可
+## 核验与边界
 
-题目及检查器来自 [Ecro/embedeval](https://github.com/Ecro/embedeval)，固定提交：[`fdbcb9b93476149cce2d395532bf5164811fe053`](https://github.com/Ecro/embedeval/tree/fdbcb9b93476149cce2d395532bf5164811fe053)。219 个公开基础案例导出 614 个通过本地规则有效性检查的 Bugfix 变体，题面保留原有 **Bug Hint**。
+`verify_results.py` 检查原有存档；`verify_six_models.py` 检查新增 4,298 份答案的文件哈希、题目顺序、答案哈希和分数。这两个命令均不调用模型。安装上游依赖后可用 `python verify_results.py --regrade` 对旧存档复评分。题库与规则固定为上游提交 [`fdbcb9b93476149cce2d395532bf5164811fe053`](https://github.com/Ecro/embedeval/tree/fdbcb9b93476149cce2d395532bf5164811fe053)，对应 219 个基础案例生成的 614 个 Bugfix 变体。参见 [方法](docs/methodology.md)、[题库](data/catalog.json)、[原有轮次协议](data/protocols.json)。
 
-本项目沿用 Apache-2.0，见 [LICENSE](LICENSE) 与 [NOTICE](NOTICE)。首次答案中的第三方声明保留原文。本仓库收录的是 EmbedEval 代码修复实验，早期 SVG 动画与嵌入式问答综合题库未计入这些成绩。
+本仓库沿用 Apache-2.0，见 [LICENSE](LICENSE) 与 [NOTICE](NOTICE)。
