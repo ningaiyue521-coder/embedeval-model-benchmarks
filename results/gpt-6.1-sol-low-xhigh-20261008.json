@@ -1,0 +1,487 @@
+{
+  "generatedAt": "2026-10-08T10:36:12+08:00",
+  "date": "2026-10-08",
+  "model": "gpt-6.1-sol",
+  "sourceRun": "gpt61-sol-low-xhigh-614-20261008",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
+  "questionsPerCombination": 614,
+  "combinations": 2,
+  "verifiedFirstAnswers": 1228,
+  "freshUniqueSessions": 1228,
+  "integrityErrors": 0,
+  "scoring": "10 points only when every frozen L0 and L3 check passes; otherwise 0. Score = passed / 614 * 100.",
+  "gradingEnvironment": {
+    "python": "3.12.14",
+    "PyYAML": "6.0.3",
+    "pydantic": "2.13.5"
+  },
+  "scope": "仅官方 L0 静态检查 + L3 规则检查；未编译、未仿真、未实机验证",
+  "compiled": false,
+  "simulated": false,
+  "hardwareVerified": false,
+  "officialLeaderboard": false,
+  "protocol": {
+    "attemptsPerModelEffortCase": 1,
+    "historicalAnswersImported": false,
+    "automaticQuestionRetries": false,
+    "feedbackToCandidate": false,
+    "toolsAllowed": false,
+    "ultraCollaborationAuthorized": false,
+    "transport": "one fresh codex exec --ephemeral per question",
+    "cliVersion": "codex-cli 0.161.0",
+    "workers": 64,
+    "concurrencyChanges": [
+      {
+        "started": "2026-10-08T10:09:16+08:00",
+        "workers": 16
+      },
+      {
+        "started": "2026-10-08T10:16:15+08:00",
+        "workers": 64
+      }
+    ],
+    "candidateInstructions": "You are completing a single-attempt code repair benchmark.\nSolve only the problem provided in the user message. Output only the complete\ncorrected source file. Do not use the filesystem, execute code, browse, consult\nexternal resources, or invoke tools. You do not have access to reference answers\nor grader feedback. Do not request clarification or a second attempt.\n",
+    "candidateInstructionsHash": "cde88a4bdd73eab6fad15cecc2c92d54046a6da7dabf41b2bfae61f4975463e7",
+    "preflightExcluded": "Two READY-only availability checks outside the benchmark question bank; no scoring."
+  },
+  "groups": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "answerFile": "answers/20261008-gpt-6.1-sol-low.jsonl",
+      "answerFileSha256": "fec5675afeb08ff8159786002387958609d7ea5650564949e1b600895077d9cf",
+      "count": 614,
+      "passed": 557,
+      "score": 90.72,
+      "formatErrorsCountedZero": 0,
+      "meanSecondsIncludingGrading": 54.64,
+      "medianSecondsIncludingGrading": 55.26,
+      "p95SecondsIncludingGrading": 81.02,
+      "tokens": {
+        "input_tokens": 2953183,
+        "cached_input_tokens": 1515776,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 255617,
+        "reasoning_output_tokens": 17989
+      },
+      "bySdk": [
+        {
+          "name": "embedded-linux",
+          "total": 569,
+          "passed": 518,
+          "score": 91.04
+        },
+        {
+          "name": "esp-idf",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "zephyr",
+          "total": 43,
+          "passed": 37,
+          "score": 86.05
+        }
+      ],
+      "byCategory": [
+        {
+          "name": "ble",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "boot",
+          "total": 38,
+          "passed": 29,
+          "score": 76.32
+        },
+        {
+          "name": "device-tree",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "dma",
+          "total": 10,
+          "passed": 9,
+          "score": 90.0
+        },
+        {
+          "name": "gpio-basic",
+          "total": 5,
+          "passed": 5,
+          "score": 100.0
+        },
+        {
+          "name": "isr-concurrency",
+          "total": 4,
+          "passed": 1,
+          "score": 25.0
+        },
+        {
+          "name": "kconfig",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "linux-driver",
+          "total": 183,
+          "passed": 180,
+          "score": 98.36
+        },
+        {
+          "name": "linux-userspace",
+          "total": 95,
+          "passed": 80,
+          "score": 84.21
+        },
+        {
+          "name": "memory-opt",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "networking",
+          "total": 67,
+          "passed": 62,
+          "score": 92.54
+        },
+        {
+          "name": "ota",
+          "total": 72,
+          "passed": 63,
+          "score": 87.5
+        },
+        {
+          "name": "power-mgmt",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "pwm",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "security",
+          "total": 2,
+          "passed": 1,
+          "score": 50.0
+        },
+        {
+          "name": "sensor-driver",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "storage",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "threading",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "timer",
+          "total": 3,
+          "passed": 3,
+          "score": 100.0
+        },
+        {
+          "name": "uart",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "watchdog",
+          "total": 1,
+          "passed": 0,
+          "score": 0.0
+        },
+        {
+          "name": "yocto",
+          "total": 119,
+          "passed": 109,
+          "score": 91.6
+        }
+      ],
+      "byDifficulty": [
+        {
+          "name": "easy",
+          "total": 30,
+          "passed": 28,
+          "score": 93.33
+        },
+        {
+          "name": "hard",
+          "total": 364,
+          "passed": 325,
+          "score": 89.29
+        },
+        {
+          "name": "medium",
+          "total": 220,
+          "passed": 204,
+          "score": 92.73
+        }
+      ]
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "answerFile": "answers/20261008-gpt-6.1-sol-xhigh.jsonl",
+      "answerFileSha256": "a1d7070cddfdda0383595cc238ace58878cac69060b4fdd6a65007270c61809c",
+      "count": 614,
+      "passed": 561,
+      "score": 91.37,
+      "formatErrorsCountedZero": 0,
+      "meanSecondsIncludingGrading": 59.96,
+      "medianSecondsIncludingGrading": 59.87,
+      "p95SecondsIncludingGrading": 85.67,
+      "tokens": {
+        "input_tokens": 2953069,
+        "cached_input_tokens": 1442304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 377766,
+        "reasoning_output_tokens": 140530
+      },
+      "bySdk": [
+        {
+          "name": "embedded-linux",
+          "total": 569,
+          "passed": 519,
+          "score": 91.21
+        },
+        {
+          "name": "esp-idf",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "zephyr",
+          "total": 43,
+          "passed": 40,
+          "score": 93.02
+        }
+      ],
+      "byCategory": [
+        {
+          "name": "ble",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "boot",
+          "total": 38,
+          "passed": 29,
+          "score": 76.32
+        },
+        {
+          "name": "device-tree",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "dma",
+          "total": 10,
+          "passed": 10,
+          "score": 100.0
+        },
+        {
+          "name": "gpio-basic",
+          "total": 5,
+          "passed": 5,
+          "score": 100.0
+        },
+        {
+          "name": "isr-concurrency",
+          "total": 4,
+          "passed": 2,
+          "score": 50.0
+        },
+        {
+          "name": "kconfig",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "linux-driver",
+          "total": 183,
+          "passed": 182,
+          "score": 99.45
+        },
+        {
+          "name": "linux-userspace",
+          "total": 95,
+          "passed": 83,
+          "score": 87.37
+        },
+        {
+          "name": "memory-opt",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "networking",
+          "total": 67,
+          "passed": 61,
+          "score": 91.04
+        },
+        {
+          "name": "ota",
+          "total": 72,
+          "passed": 60,
+          "score": 83.33
+        },
+        {
+          "name": "power-mgmt",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "pwm",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "security",
+          "total": 2,
+          "passed": 1,
+          "score": 50.0
+        },
+        {
+          "name": "sensor-driver",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "storage",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "threading",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "timer",
+          "total": 3,
+          "passed": 3,
+          "score": 100.0
+        },
+        {
+          "name": "uart",
+          "total": 2,
+          "passed": 2,
+          "score": 100.0
+        },
+        {
+          "name": "watchdog",
+          "total": 1,
+          "passed": 1,
+          "score": 100.0
+        },
+        {
+          "name": "yocto",
+          "total": 119,
+          "passed": 109,
+          "score": 91.6
+        }
+      ],
+      "byDifficulty": [
+        {
+          "name": "easy",
+          "total": 30,
+          "passed": 29,
+          "score": 96.67
+        },
+        {
+          "name": "hard",
+          "total": 364,
+          "passed": 331,
+          "score": 90.93
+        },
+        {
+          "name": "medium",
+          "total": 220,
+          "passed": 201,
+          "score": 91.36
+        }
+      ]
+    }
+  ],
+  "lowToXhigh": {
+    "failedToFailed": 45,
+    "passedToPassed": 549,
+    "failedToPassed": 12,
+    "passedToFailed": 8
+  },
+  "changePoints": 0.65,
+  "publishedLowComparison": [
+    {
+      "model": "gpt-6-astra",
+      "baselineFile": "results/low-614.json",
+      "baselinePassed": 559,
+      "baselineScore": 91.04,
+      "newPassedMinusBaseline": -2,
+      "newScoreMinusBaselinePoints": -0.32
+    },
+    {
+      "model": "gpt-6-sol",
+      "baselineFile": "results/low-614.json",
+      "baselinePassed": 533,
+      "baselineScore": 86.81,
+      "newPassedMinusBaseline": 24,
+      "newScoreMinusBaselinePoints": 3.91
+    },
+    {
+      "model": "gpt-5.5",
+      "baselineFile": "results/low-614.json",
+      "baselinePassed": 521,
+      "baselineScore": 84.85,
+      "newPassedMinusBaseline": 36,
+      "newScoreMinusBaselinePoints": 5.87
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "baselineFile": "results/low-614.json",
+      "baselinePassed": 515,
+      "baselineScore": 83.88,
+      "newPassedMinusBaseline": 42,
+      "newScoreMinusBaselinePoints": 6.84
+    },
+    {
+      "model": "gpt-6-luna",
+      "baselineFile": "results/low-614.json",
+      "baselinePassed": 493,
+      "baselineScore": 80.29,
+      "newPassedMinusBaseline": 64,
+      "newScoreMinusBaselinePoints": 10.43
+    }
+  ]
+}

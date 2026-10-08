@@ -1,0 +1,254 @@
+{
+  "generatedAt": "2026-10-08T10:43:21+08:00",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
+  "questionsPerCombination": 614,
+  "combinations": 14,
+  "verifiedFirstAnswers": 8596,
+  "formatErrorsCountedZero": 1,
+  "averageDefinition": "(Low passed + Xhigh passed) / (2 * 614) * 100, rounded once to 2 decimals",
+  "rankingDefinition": "Descending combined pass count across Low and Xhigh",
+  "scope": "仅官方 L0 静态检查 + L3 规则检查；未编译、未仿真、未实机验证",
+  "historicalScoresReused": true,
+  "modelCallsDuringAggregation": 0,
+  "sourceSummaries": [
+    {
+      "path": "results/low-614.json",
+      "sha256": "cb07d21a0748668646bf708814886d8dddd2f71a1ad33bffeb2b2c1f885bb2a3"
+    },
+    {
+      "path": "results/six-models-low-xhigh-20260928.json",
+      "sha256": "bc852925b1adb5ba1522864c7cd1f37eb7addca828978a5fdb0b5b2dbba1bfb7"
+    },
+    {
+      "path": "results/gpt-6.1-sol-low-xhigh-20261008.json",
+      "sha256": "ac9fca20211b3b4acc253b0a184fc17badab605bb22c11ecde5beefe3ac40c91"
+    }
+  ],
+  "models": [
+    {
+      "model": "gpt-6-astra",
+      "displayName": "GPT-6 Astra",
+      "low": {
+        "model": "gpt-6-astra",
+        "effort": "low",
+        "answerFile": "answers/sol55astra-low-614.jsonl",
+        "answerFileSha256": "300fa3caa6d6f61b884cbb1a0e883215f3eef8835b39ef2ce208c2c53a4c9934",
+        "round": "sol55astra-low-614",
+        "sourceRun": null,
+        "count": 614,
+        "passed": 559,
+        "score": 91.04,
+        "formatErrorsCountedZero": 0
+      },
+      "xhigh": {
+        "model": "gpt-6-astra",
+        "effort": "xhigh",
+        "answerFile": "answers/20260928-gpt-6-astra-xhigh.jsonl",
+        "answerFileSha256": "5a671a68ab9655acd0be32d12f25b64fc2c68462d638f7ed1b46a8d7a4e9df7c",
+        "round": "20260928-six-model-614",
+        "sourceRun": "gpt6-sol-astra-xhigh-614-20260924",
+        "count": 614,
+        "passed": 564,
+        "score": 91.86,
+        "formatErrorsCountedZero": 0
+      },
+      "averageScore": 91.45,
+      "changePoints": 0.81,
+      "dates": "2026-09-24 / 2026-09-28",
+      "rank": 1
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "displayName": "GPT-6.1 Sol",
+      "low": {
+        "model": "gpt-6.1-sol",
+        "effort": "low",
+        "answerFile": "answers/20261008-gpt-6.1-sol-low.jsonl",
+        "answerFileSha256": "fec5675afeb08ff8159786002387958609d7ea5650564949e1b600895077d9cf",
+        "round": "gpt61-sol-low-xhigh-20261008",
+        "sourceRun": "gpt61-sol-low-xhigh-614-20261008",
+        "count": 614,
+        "passed": 557,
+        "score": 90.72,
+        "formatErrorsCountedZero": 0
+      },
+      "xhigh": {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "answerFile": "answers/20261008-gpt-6.1-sol-xhigh.jsonl",
+        "answerFileSha256": "a1d7070cddfdda0383595cc238ace58878cac69060b4fdd6a65007270c61809c",
+        "round": "gpt61-sol-low-xhigh-20261008",
+        "sourceRun": "gpt61-sol-low-xhigh-614-20261008",
+        "count": 614,
+        "passed": 561,
+        "score": 91.37,
+        "formatErrorsCountedZero": 0
+      },
+      "averageScore": 91.04,
+      "changePoints": 0.65,
+      "dates": "2026-10-08",
+      "rank": 2
+    },
+    {
+      "model": "gpt-6-sol",
+      "displayName": "GPT-6 Sol",
+      "low": {
+        "model": "gpt-6-sol",
+        "effort": "low",
+        "answerFile": "answers/sol55astra-low-614.jsonl",
+        "answerFileSha256": "300fa3caa6d6f61b884cbb1a0e883215f3eef8835b39ef2ce208c2c53a4c9934",
+        "round": "sol55astra-low-614",
+        "sourceRun": null,
+        "count": 614,
+        "passed": 533,
+        "score": 86.81,
+        "formatErrorsCountedZero": 0
+      },
+      "xhigh": {
+        "model": "gpt-6-sol",
+        "effort": "xhigh",
+        "answerFile": "answers/20260928-gpt-6-sol-xhigh.jsonl",
+        "answerFileSha256": "177a73241423d190a0ec358c2cf452f12f19fac08a80135dab98dd26ba7bc388",
+        "round": "20260928-six-model-614",
+        "sourceRun": "gpt6-sol-astra-xhigh-614-20260924",
+        "count": 614,
+        "passed": 542,
+        "score": 88.27,
+        "formatErrorsCountedZero": 0
+      },
+      "averageScore": 87.54,
+      "changePoints": 1.47,
+      "dates": "2026-09-24 / 2026-09-28",
+      "rank": 3
+    },
+    {
+      "model": "gpt-5.5",
+      "displayName": "GPT-5.5",
+      "low": {
+        "model": "gpt-5.5",
+        "effort": "low",
+        "answerFile": "answers/sol55astra-low-614.jsonl",
+        "answerFileSha256": "300fa3caa6d6f61b884cbb1a0e883215f3eef8835b39ef2ce208c2c53a4c9934",
+        "round": "sol55astra-low-614",
+        "sourceRun": null,
+        "count": 614,
+        "passed": 521,
+        "score": 84.85,
+        "formatErrorsCountedZero": 0
+      },
+      "xhigh": {
+        "model": "gpt-5.5",
+        "effort": "xhigh",
+        "answerFile": "answers/20260928-gpt-5.5-xhigh.jsonl",
+        "answerFileSha256": "901d663718b34526778ff7dc8e12c7b1cf9c105f1d1f437a7ce5dba0b3ba5e84",
+        "round": "20260928-six-model-614",
+        "sourceRun": "gpt55-luna-xhigh-614-20260928",
+        "count": 614,
+        "passed": 541,
+        "score": 88.11,
+        "formatErrorsCountedZero": 0
+      },
+      "averageScore": 86.48,
+      "changePoints": 3.26,
+      "dates": "2026-09-24 / 2026-09-28",
+      "rank": 4
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "displayName": "GPT-5.6 Sol",
+      "low": {
+        "model": "gpt-5.6-sol",
+        "effort": "low",
+        "answerFile": "answers/56sol-low-614.jsonl",
+        "answerFileSha256": "3531882f6330221b437eaeee0c883289564514849c0f2f2bc6d8d665ac2bfd90",
+        "round": "56sol-low-614",
+        "sourceRun": null,
+        "count": 614,
+        "passed": 515,
+        "score": 83.88,
+        "formatErrorsCountedZero": 0
+      },
+      "xhigh": {
+        "model": "gpt-5.6-sol",
+        "effort": "xhigh",
+        "answerFile": "answers/20260928-gpt-5.6-sol-xhigh.jsonl",
+        "answerFileSha256": "640d7462811c7f0f71c52a0207ec918979825b654dd88c5c75751d176f548d6e",
+        "round": "20260928-six-model-614",
+        "sourceRun": "gpt56-sol-xhigh-614-20260928",
+        "count": 614,
+        "passed": 533,
+        "score": 86.81,
+        "formatErrorsCountedZero": 0
+      },
+      "averageScore": 85.34,
+      "changePoints": 2.93,
+      "dates": "2026-09-24 / 2026-09-28",
+      "rank": 5
+    },
+    {
+      "model": "gpt-6-luna",
+      "displayName": "GPT-6 Luna",
+      "low": {
+        "model": "gpt-6-luna",
+        "effort": "low",
+        "answerFile": "answers/luna-low-614.jsonl",
+        "answerFileSha256": "b8c10dacf72820f11eb776430390d88f20a71035ce05697398d17a5b8723f85f",
+        "round": "luna-low-614",
+        "sourceRun": null,
+        "count": 614,
+        "passed": 493,
+        "score": 80.29,
+        "formatErrorsCountedZero": 0
+      },
+      "xhigh": {
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "answerFile": "answers/20260928-gpt-6-luna-xhigh.jsonl",
+        "answerFileSha256": "8dc8de6d6dca6daa20fd1222693b9181492a8074ff87dd8526a418bb7a206e04",
+        "round": "20260928-six-model-614",
+        "sourceRun": "gpt55-luna-xhigh-614-20260928",
+        "count": 614,
+        "passed": 498,
+        "score": 81.11,
+        "formatErrorsCountedZero": 1
+      },
+      "averageScore": 80.7,
+      "changePoints": 0.81,
+      "dates": "2026-09-24 / 2026-09-28",
+      "rank": 6
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "displayName": "GPT-5.6 Luna",
+      "low": {
+        "model": "gpt-5.6-luna",
+        "effort": "low",
+        "answerFile": "answers/20260928-gpt-5.6-luna-low.jsonl",
+        "answerFileSha256": "8579c9c3ad6cd08c0892774bb86ada4dafb0797728d07d7df3ae3118b5c90c44",
+        "round": "20260928-six-model-614",
+        "sourceRun": "gpt56-terra-luna-low-614-20260928",
+        "count": 614,
+        "passed": 480,
+        "score": 78.18,
+        "formatErrorsCountedZero": 0
+      },
+      "xhigh": {
+        "model": "gpt-5.6-luna",
+        "effort": "xhigh",
+        "answerFile": "answers/20260928-gpt-5.6-luna-xhigh.jsonl",
+        "answerFileSha256": "9b478fb5e8bdd73ec0f185ad4d0296c87141e39a5bab928ed460cd132f9ad121",
+        "round": "20260928-six-model-614",
+        "sourceRun": "gpt56-luna-xhigh-614-20260928",
+        "count": 614,
+        "passed": 486,
+        "score": 79.15,
+        "formatErrorsCountedZero": 0
+      },
+      "averageScore": 78.66,
+      "changePoints": 0.98,
+      "dates": "2026-09-24 / 2026-09-28",
+      "rank": 7
+    }
+  ]
+}
