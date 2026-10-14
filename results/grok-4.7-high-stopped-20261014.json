@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-14",
+  "status": "stopped_incomplete",
+  "model": "grok-4.7-high",
+  "effort": "high",
+  "sourceRun": "cursor-grok-47-high-full-20260928",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
+  "plannedQuestions": 614,
+  "lockedAttempts": 614,
+  "gradedFirstAnswers": 611,
+  "uniqueCompletedSessionsVerified": 611,
+  "passed": 540,
+  "failedGradedAnswers": 71,
+  "answeredOnlyScore": 88.38,
+  "full614Score": null,
+  "missingFinalAnswers": [
+    {
+      "ordinal": 310,
+      "status": "generation_error",
+      "errorCode": "CURSOR_CONFIG_RENAME_EPERM"
+    },
+    {
+      "ordinal": 506,
+      "status": "generation_error",
+      "errorCode": "CURSOR_TLS_CONNECTION_ABORTED"
+    },
+    {
+      "ordinal": 525,
+      "status": "cancelled_by_user",
+      "errorCode": "USER_STOPPED_PROLONGED_REQUEST"
+    }
+  ],
+  "answerFile": "answers/20261014-grok-4.7-high-stopped.jsonl",
+  "answerFileSha256": "3158075ec801d8c7626d0cbe54d8859961ae84f3afc0ac0c65bf88f699c8a9fd",
+  "firstAnswerHashesVerified": 611,
+  "historicalFirstAnswersRetained": 6,
+  "toolCallsInCompletedAnswers": 0,
+  "modelCallsDuringExport": 0,
+  "automaticRetries": false,
+  "compiled": false,
+  "simulated": false,
+  "hardwareVerified": false,
+  "regradedDuringExport": false,
+  "actualCursorChargeUSD": null,
+  "notes": [
+    "Score uses the 611 graded answers only; excluded from complete-614 ranking.",
+    "First 6 answers from 2026-09-28 retained; remaining cases attempted on 2026-10-14.",
+    "Display label corrections scored saved first answers without another model call.",
+    "Raw events, reasoning, account information and session identifiers are not exported."
+  ]
+}

@@ -1,4 +1,15 @@
-# 机器可读结果
+# 成绩与报告索引
+
+| 状态 | 报告 | 机器可读数据 |
+|---|---|---|
+| 完整：14 组 × 614 题 | [七模型 Low/Xhigh](seven-models-low-xhigh-20261008.md) | [JSON](seven-models-low-xhigh-20261008.json) |
+| 完整：3 组 × 614 题 | [三模型 Max](max-614-20261009.md) | [JSON](max-614-20261009.json) |
+| 停止：611 / 614 首答 | [Grok 4.7 High · 2026-10-14](grok-4.7-high-stopped-20261014.md) | [JSON](grok-4.7-high-stopped-20261014.json) |
+| 小样本与历史暂停 | [Cursor 试跑](cursor-samples-20260928.md) | [JSON](cursor-samples-20260928.json) |
+
+Grok 的 88.38 分采用 611 道已答题为分母，完整 614 题成绩为 null；3 条异常未重答。早期 Grok 6 题记录作为历史快照保留。
+
+## 历史文件与辅助对比
 
 - [max-614-20261009.json](max-614-20261009.json)：三组完整 Max 的 1,842 份首答、成绩与存档哈希。[报告](max-614-20261009.md)
 - [cursor-samples-20260928.json](cursor-samples-20260928.json)：Opus 30 题、Grok 暂停 6 题，以及无答案启动失败记录。[报告](cursor-samples-20260928.md)

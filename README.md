@@ -1,68 +1,97 @@
-# 大模型嵌入式代码修复实测
+# EmbedEval · 嵌入式代码修复实测
 
-基于 [EmbedEval](https://github.com/Ecro/embedeval) 的固定版本 Bugfix 题库，对 614 道公开变体进行逐题新会话测试。每题只采纳模型首次完整答案；通过固定 L0 静态检查和 L3 规则检查计 10 分，否则 0 分，最终折算为百分制。**没有编译、仿真或实机验证，规则分不能等同真实修复率。** 这不是 EmbedEval 官方榜单。[判题器局限](docs/grader-limitations.md)
+**固定题库 · 每题独立会话 · 只计首次答案 · 原始答卷可核验**
 
-## 2026-10-09 后续 Max 测试
+[成绩总表](#完整轮次成绩) · [最新 Grok 记录](#grok-47-high) · [报告导航](#报告导航) · [本地核验](#本地核验)
 
-三组 Max 均完成 614 题，共新增 **1,842 份首次答案**：
+| 题库 | 完整模型 | 完整轮次 | 完整轮次首答 |
+|:---:|:---:|:---:|:---:|
+| **614 题** | **7 款** | **17 组** | **10,438 份** |
 
-| 模型与档位 | 通过 / 614 | 规则分 / 100 |
-|---|---:|---:|
-| GPT-6.1 Sol Max | 564 | 91.86 |
-| GPT-6 Sol Max | 551 | 89.74 |
-| GPT-6 Luna Max | 502 | 81.76 |
+> 本项目只执行冻结 **L0 静态检查 + L3 规则检查**。未编译、仿真或实机验证，规则分不等于真实修复率；这是独立实测，不是 EmbedEval 官方榜单。
 
-[Max 完整成绩与首答索引](results/max-614-20261009.md) · [Luna Max 详细报告](results/gpt-6-luna-max-614-20261009.md) · [成绩和历史价格对比](results/seven-models-scores-prices-20261009.md) · [耗时对比](results/seven-models-speed-20261009.md)。价格和外部测速保留报告所注明的 2026-10-09 历史口径。
+## Grok 4.7 High
 
-另归档 [Cursor 小样本](results/cursor-samples-20260928.md)：Opus High 30 题通过 29 题；Grok High 计划 614 题，在 6 题后暂停、通过 5 题。样本不进入全量排行；Opus 更早的无答案启动失败也单列记录。运行 `python verify_additional_results.py` 可核验新增的 **1,878 份首答**，不调用模型。
+**2026-10-14 · 已停止 · 未完成完整轮次**
 
-## 七模型 Low 与极高档：各 614 题
+| 有效首答 / 计划题数 | 通过 / 已评分 | 已答题规则分 | 无最终答案 |
+|:---:|:---:|:---:|:---:|
+| **611 / 614** | **540 / 611** | **88.38** | **3 题** |
 
-沿用同一固定题库、逐题新会话与首次完整答案规则，按两档均分排序。均分从两档的原始通过题数计算后统一四舍五入，避免先舍入单档成绩带来的误差。
+88.38 分的分母是 **611**，不与完整 614 题结果混排。第 310 题配置改名失败、第 506 题 TLS 连接断开、第 525 题长时间未返回后停止；均未重答。9 月 28 日的 6 份首答原样保留。
 
-| 排名 | 模型 | Low 通过 / 614 | Low 分 | 极高通过 / 614 | 极高分 | 两档均分 |
-|---:|---|---:|---:|---:|---:|---:|
-| 1 | GPT-6 Astra | 559 | 91.04 | 564 | 91.86 | 91.45 |
-| 2 | **GPT-6.1 Sol** | 557 | 90.72 | 561 | 91.37 | 91.04 |
-| 3 | GPT-6 Sol | 533 | 86.81 | 542 | 88.27 | 87.54 |
-| 4 | GPT-5.5 | 521 | 84.85 | 541 | 88.11 | 86.48 |
-| 5 | GPT-5.6 Sol | 515 | 83.88 | 533 | 86.81 | 85.34 |
-| 6 | GPT-6 Luna | 493 | 80.29 | 498 | 81.11 | 80.70 |
-| 7 | GPT-5.6 Luna | 480 | 78.18 | 486 | 79.15 | 78.66 |
+**[查看报告 →](results/grok-4.7-high-stopped-20261014.md)** · [逐题存档](answers/20261014-grok-4.7-high-stopped.jsonl) · [机器可读结果](results/grok-4.7-high-stopped-20261014.json)
 
-14 个模型与档位组合，共 **8,596 份完整轮次的首次答案**。GPT-6.1 Sol 为 2026-10-08 新增的 1,228 份答卷；此前六模型成绩来自 2026-09-24 / 2026-09-28 批次。本次合并只读取既有首答，不重新调用模型。GPT-6 Luna 极高保留 1 份首次输出格式异常，按 0 分计。
+## 完整轮次成绩
 
-[七模型完整对比](results/seven-models-low-xhigh-20261008.md) · [合并数据与答卷来源](results/seven-models-low-xhigh-20261008.json) · [GPT-6.1 Sol 详细成绩](results/gpt-6.1-sol-low-xhigh-20261008.md)。运行 `python verify_all_models.py` 可从原始答卷检查 14 组成绩与总榜，**不调用模型**。不同批次并发与环境有差异，耗时不宜直接解释为模型本身速度差。
+每个已测档位均覆盖 **614 题**。表格显示「百分制规则分 / 通过题数」；`—` 表示未测。模型顺序沿用 Low 与 Xhigh 两档均分顺序，Max 单列，不参与该排序。
 
-**首次答案存档：**原有五个 Low 组合共 3,070 份；[七个后续组合](results/six-models-answer-audit-20260928.json)共 4,298 份；GPT-6.1 Sol 新增 1,228 份。此前暂停的 Sol/Astra 极高 300 份保留作历史审计，已被完整轮次覆盖，**不重复计入 8,596**。
+| 模型 | Low | Xhigh（极高） | Max |
+|:---|---:|---:|---:|
+| **GPT-6 Astra** | 91.04 / 559 | **91.86 / 564** | — |
+| **GPT-6.1 Sol** | 90.72 / 557 | 91.37 / 561 | **91.86 / 564** |
+| GPT-6 Sol | 86.81 / 533 | 88.27 / 542 | **89.74 / 551** |
+| GPT-5.5 | 84.85 / 521 | **88.11 / 541** | — |
+| GPT-5.6 Sol | 83.88 / 515 | **86.81 / 533** | — |
+| GPT-6 Luna | 80.29 / 493 | 81.11 / 498 | **81.76 / 502** |
+| GPT-5.6 Luna | 78.18 / 480 | **79.15 / 486** | — |
 
-GPT-5.6 Terra Low 曾按用户要求停止，只留下 [127 份首次答案](results/partial-terra-low-20260928.json)，没有全量成绩，不进入七模型排行。
+![各模型最高已测规则分，均为完整 614 题；所用档位分别标注](assets/best-complete-scores.svg)
 
-另有独立的 [10 题试跑矩阵](results/starter-10.json)：38 个模型与档位组合、380 份首次答案。这一小样本不与 614 题结果混排。早期 SVG 动画与嵌入式问答综合题库未计入本仓库成绩。
+图中取各模型**最高已测档位**，并非同一档位比较。Low/Xhigh 来自 2026-09-24、09-28、10-08 批次；Max 来自 10-09。不同日期、并发和平台条件下的耗时不能直接解释为模型本身速度差。GPT-6 Luna Xhigh 的 1 份首次输出格式异常按 0 分计入原完整轮次。
 
-## 在另一台电脑继续跑新测试
+[Low/Xhigh 完整对比](results/seven-models-low-xhigh-20261008.md) · [三组 Max](results/max-614-20261009.md) · [成绩与历史价格](results/seven-models-scores-prices-20261009.md) · [耗时对比](results/seven-models-speed-20261009.md)
 
-需要 Python 3.12+、已登录的 Codex CLI，以及固定版本的上游检查器。下载仓库后，在仓库目录执行：
+## 报告导航
+
+| 想看什么 | 入口 | 口径 |
+|:---|:---|:---|
+| 七模型 Low / Xhigh | [完整对比](results/seven-models-low-xhigh-20261008.md) | 14 组 × 614 题 |
+| 三模型 Max | [完整成绩](results/max-614-20261009.md) | 3 组 × 614 题 |
+| Grok 4.7 High | [停止轮次](results/grok-4.7-high-stopped-20261014.md) | 611 份答卷，3 题无最终答案 |
+| Claude Opus High | [Cursor 小样本](results/cursor-samples-20260928.md) | 30 题通过 29 题，不进入全量排行 |
+| GPT-5.6 Terra Low | [暂停记录](results/partial-terra-low-20260928.json) | 127 份首答，无全量成绩 |
+| 早期试跑 | [10 题矩阵](results/starter-10.json) | 38 组、380 份首答，小样本 |
+| 首答与逐项评分 | [答卷目录](answers/README.md) | JSONL 原文、哈希与检查结果 |
+| 数据与实验方法 | [题库](data/README.md) · [方法](docs/methodology.md) · [判题器局限](docs/grader-limitations.md) | 冻结题面和规则 |
+
+价格和外部测速报告保留注明的 **2026-10-09 历史口径**。早期 SVG 动画与嵌入式问答综合题库未计入本仓库。已被完整轮次覆盖的 300 份暂停极高档答案及 Grok 早期 6 题样本只作历史审计，不重复计入完整轮次总数。
+
+## 本地核验
+
+Python 3.12+，下面的命令不需要模型密钥，不调用模型，也不改答案或分数。
+
+```bash
+python verify_results.py
+python verify_six_models.py
+python verify_gpt61.py
+python verify_all_models.py
+python verify_additional_results.py
+python verify_grok_stopped.py
+```
+
+<details>
+<summary><strong>继续跑新测试：安装与使用</strong></summary>
+
+需要已登录的 Codex CLI 和固定版本上游检查器。Windows PowerShell：
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python setup_upstream.py
-python verify_results.py
-python verify_six_models.py
-python verify_gpt61.py
-python verify_all_models.py
 python batch_runner.py doctor
 python batch_runner.py prepare --run my-new-round --models gpt-6-luna --efforts low
 python batch_runner.py run --run my-new-round --workers 4
 python batch_runner.py status --run my-new-round
 ```
 
-macOS/Linux 用 `source .venv/bin/activate` 激活环境。`prepare` 只建一个全新的本地轮次，不导入历史答案，也不调用模型；`run` 才会消耗 Codex 账户额度。每题启动独立临时会话，第一次尝试即锁定，错误须检查，不能重答刷分。结果写入被 Git 忽略的 `.runs/`。调用前先确认该账户支持指定模型与推理档位。详细说明见 [复现与运行方法](docs/reproduce.md)；也可以用 [网页评分器](server.py) 手动录入其他模型的首次答案。
+macOS/Linux 用 `source .venv/bin/activate` 激活环境。`prepare` 只建新轮次；`run` 会消耗账户额度。每道题第一次尝试即锁定，失败记录保留，不重答刷分。结果写入被 Git 忽略的 `.runs/`。指定模型和档位须由账户支持。参见 [复现与运行方法](docs/reproduce.md)；也可以通过 [网页评分器](server.py) 手动录入其他模型的首次答案。
 
-## 核验与边界
+</details>
 
-`verify_results.py` 检查原有存档；`verify_six_models.py` 检查新增 4,298 份答案的文件哈希、题目顺序、答案哈希和分数。`verify_gpt61.py` 检查本次 1,228 份首答；`verify_all_models.py` 从 8,596 份完整轮次首答核验七模型总榜。四个命令均不调用模型。安装上游依赖后可用 `python verify_results.py --regrade` 对旧存档复评分。题库与规则固定为上游提交 [`fdbcb9b93476149cce2d395532bf5164811fe053`](https://github.com/Ecro/embedeval/tree/fdbcb9b93476149cce2d395532bf5164811fe053)，对应 219 个基础案例生成的 614 个 Bugfix 变体。参见 [方法](docs/methodology.md)、[题库](data/catalog.json)、[原有轮次协议](data/protocols.json)。
+---
 
-本仓库沿用 Apache-2.0，见 [LICENSE](LICENSE) 与 [NOTICE](NOTICE)。
+题库来自 [EmbedEval](https://github.com/Ecro/embedeval) 提交 [`fdbcb9b`](https://github.com/Ecro/embedeval/tree/fdbcb9b93476149cce2d395532bf5164811fe053)：219 个基础案例生成 614 个 Bugfix 变体，并非 614 个独立工程任务。通过所有冻结 L0/L3 检查得 10 分，否则 0 分；完整轮次分数 = 通过题数 ÷ 614 × 100。
+
+Apache-2.0 · [LICENSE](LICENSE) · [NOTICE](NOTICE) · 更新于 **2026-10-14**
