@@ -4,6 +4,8 @@
 
 `firstAnswer` 为首次最终答案，`checks` 为原始逐项规则结果。Grok 的 3 条异常记录中 `firstAnswer`、`answerHash` 和 `passed` 均为 `null`，不会冒充已评分失败答卷。
 
+汇总计分时，这 3 次无有效最终答案的尝试计 0 分，分母仍为 614；Grok 4.7 High 的 **87.95 分**纳入首页主表。原始状态为 null 表示没有答卷和检查结果，不能据此从计分分母中移除。
+
 | 文件 | 记录数 |
 |---|---:|
 | [20261014-grok-4.7-high-stopped.jsonl](20261014-grok-4.7-high-stopped.jsonl) | 614（611 首答 + 3 异常） |

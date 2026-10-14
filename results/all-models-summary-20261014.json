@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-14",
+  "modelsCount": 8,
+  "combinations": 18,
+  "denominatorPerCombination": 614,
+  "scoredAttempts": 11052,
+  "rankingDefinition": "Descending best measured score for each model; efforts differ and are explicitly labeled.",
+  "missingFinalAnswerPolicy": "Zero points for the first locked attempt without a valid final answer. No retry.",
+  "sourceSummaries": [
+    {
+      "path": "results/seven-models-low-xhigh-20261008.json",
+      "sha256": "3fcd31fc92e40716fc603b5f6c92e877b1a6abcd240d1329a4638ef3dcdf08ac"
+    },
+    {
+      "path": "results/max-614-20261009.json",
+      "sha256": "2951c1f9a47ab19a53c1979014ddd127fdbb412ce82f32ad8cdc660f1a0c4d1e"
+    },
+    {
+      "path": "results/grok-4.7-high-stopped-20261014.json",
+      "sha256": "65cd0e07f6f2b4652d9edfcf0f86e2e9249a600541cba72d2359e44d75f3d577"
+    }
+  ],
+  "models": [
+    {
+      "model": "gpt-6-astra",
+      "displayName": "GPT-6 Astra",
+      "groups": {
+        "low": {
+          "effort": "low",
+          "passed": 559,
+          "score": 91.04,
+          "denominator": 614
+        },
+        "xhigh": {
+          "effort": "xhigh",
+          "passed": 564,
+          "score": 91.86,
+          "denominator": 614
+        }
+      },
+      "best": {
+        "effort": "xhigh",
+        "passed": 564,
+        "score": 91.86,
+        "denominator": 614
+      }
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "displayName": "GPT-6.1 Sol",
+      "groups": {
+        "low": {
+          "effort": "low",
+          "passed": 557,
+          "score": 90.72,
+          "denominator": 614
+        },
+        "xhigh": {
+          "effort": "xhigh",
+          "passed": 561,
+          "score": 91.37,
+          "denominator": 614
+        },
+        "max": {
+          "effort": "max",
+          "passed": 564,
+          "score": 91.86,
+          "denominator": 614
+        }
+      },
+      "best": {
+        "effort": "max",
+        "passed": 564,
+        "score": 91.86,
+        "denominator": 614
+      }
+    },
+    {
+      "model": "gpt-6-sol",
+      "displayName": "GPT-6 Sol",
+      "groups": {
+        "low": {
+          "effort": "low",
+          "passed": 533,
+          "score": 86.81,
+          "denominator": 614
+        },
+        "xhigh": {
+          "effort": "xhigh",
+          "passed": 542,
+          "score": 88.27,
+          "denominator": 614
+        },
+        "max": {
+          "effort": "max",
+          "passed": 551,
+          "score": 89.74,
+          "denominator": 614
+        }
+      },
+      "best": {
+        "effort": "max",
+        "passed": 551,
+        "score": 89.74,
+        "denominator": 614
+      }
+    },
+    {
+      "model": "gpt-5.5",
+      "displayName": "GPT-5.5",
+      "groups": {
+        "low": {
+          "effort": "low",
+          "passed": 521,
+          "score": 84.85,
+          "denominator": 614
+        },
+        "xhigh": {
+          "effort": "xhigh",
+          "passed": 541,
+          "score": 88.11,
+          "denominator": 614
+        }
+      },
+      "best": {
+        "effort": "xhigh",
+        "passed": 541,
+        "score": 88.11,
+        "denominator": 614
+      }
+    },
+    {
+      "model": "grok-4.7-high",
+      "displayName": "Grok 4.7",
+      "groups": {
+        "high": {
+          "effort": "high",
+          "passed": 540,
+          "score": 87.95,
+          "denominator": 614,
+          "missingFinalAnswersCountedZero": 3
+        }
+      },
+      "best": {
+        "effort": "high",
+        "passed": 540,
+        "score": 87.95,
+        "denominator": 614,
+        "missingFinalAnswersCountedZero": 3
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "displayName": "GPT-5.6 Sol",
+      "groups": {
+        "low": {
+          "effort": "low",
+          "passed": 515,
+          "score": 83.88,
+          "denominator": 614
+        },
+        "xhigh": {
+          "effort": "xhigh",
+          "passed": 533,
+          "score": 86.81,
+          "denominator": 614
+        }
+      },
+      "best": {
+        "effort": "xhigh",
+        "passed": 533,
+        "score": 86.81,
+        "denominator": 614
+      }
+    },
+    {
+      "model": "gpt-6-luna",
+      "displayName": "GPT-6 Luna",
+      "groups": {
+        "low": {
+          "effort": "low",
+          "passed": 493,
+          "score": 80.29,
+          "denominator": 614
+        },
+        "xhigh": {
+          "effort": "xhigh",
+          "passed": 498,
+          "score": 81.11,
+          "denominator": 614
+        },
+        "max": {
+          "effort": "max",
+          "passed": 502,
+          "score": 81.76,
+          "denominator": 614
+        }
+      },
+      "best": {
+        "effort": "max",
+        "passed": 502,
+        "score": 81.76,
+        "denominator": 614
+      }
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "displayName": "GPT-5.6 Luna",
+      "groups": {
+        "low": {
+          "effort": "low",
+          "passed": 480,
+          "score": 78.18,
+          "denominator": 614
+        },
+        "xhigh": {
+          "effort": "xhigh",
+          "passed": 486,
+          "score": 79.15,
+          "denominator": 614
+        }
+      },
+      "best": {
+        "effort": "xhigh",
+        "passed": 486,
+        "score": 79.15,
+        "denominator": 614
+      }
+    }
+  ]
+}

@@ -36,9 +36,11 @@ def verify():
         need(not any(k in r for k in ('session_id','threadId','command','apiKey','events')),'Private metadata')
     need(answered==summary['gradedFirstAnswers']==611 and passed==summary['passed']==540,'Grade totals')
     need(round(100*passed/answered,2)==summary['answeredOnlyScore']==88.38,'Answered-only score')
-    need(summary['full614Score'] is None and missing==summary['missingFinalAnswers'],'Incomplete round')
+    need(round(100*passed/614,2)==summary['full614Score']==87.95,'Full denominator score')
+    need(summary['scoreDenominator']==614 and summary['missingFinalAnswersCountedZero']==len(missing)==3,'Missing answer scoring')
+    need(summary['includedInComparison'] is True and missing==summary['missingFinalAnswers'],'Comparison inclusion')
     prior=[json.loads(s) for s in (ROOT/'answers/20260928-grok-4.7-high-sample.jsonl').read_text(encoding='utf-8').splitlines()]
     need(len(prior)==6,'Historical sample')
     need(all(a['caseKey']==b['caseKey'] and a['firstAnswer']==b['firstAnswer'] and a['answerHash']==b['answerHash'] for a,b in zip(prior,rows[:6])),'Historical answer changed')
-    return {'ok':True,'attempts':614,'gradedFirstAnswers':answered,'passed':passed,'answeredOnlyScore':88.38,'missingFinalAnswers':3,'modelCalls':0}
+    return {'ok':True,'attempts':614,'gradedFirstAnswers':answered,'passed':passed,'score':summary['full614Score'],'missingFinalAnswersCountedZero':3,'modelCalls':0}
 if __name__=='__main__': print(json.dumps(verify(),ensure_ascii=False,indent=2))

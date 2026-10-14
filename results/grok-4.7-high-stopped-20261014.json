@@ -13,7 +13,7 @@
   "passed": 540,
   "failedGradedAnswers": 71,
   "answeredOnlyScore": 88.38,
-  "full614Score": null,
+  "full614Score": 87.95,
   "missingFinalAnswers": [
     {
       "ordinal": 310,
@@ -44,9 +44,14 @@
   "regradedDuringExport": false,
   "actualCursorChargeUSD": null,
   "notes": [
-    "Score uses the 611 graded answers only; excluded from complete-614 ranking.",
+    "Comparison score uses all 614 locked attempts; three attempts without valid final answers count as zero. The historical 611-answer score remains audit metadata only.",
     "First 6 answers from 2026-09-28 retained; remaining cases attempted on 2026-10-14.",
     "Display label corrections scored saved first answers without another model call.",
     "Raw events, reasoning, account information and session identifiers are not exported."
-  ]
+  ],
+  "scoreDenominator": 614,
+  "missingFinalAnswersCountedZero": 3,
+  "failedForScoring": 74,
+  "includedInComparison": true,
+  "scoringPolicy": "First locked attempt only. No valid final answer counts as zero; score = passed / 614 * 100. User selected this scoring treatment on 2026-10-14."
 }
