@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-28",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
+  "verifiedFirstAnswers": 36,
+  "freshUniqueSessions": 36,
+  "modelCallsDuringExport": 0,
+  "groups": [
+    {
+      "answerFile": "answers/20260928-grok-4.7-high-sample.jsonl",
+      "answerFileSha256": "f2a9e04b89e1bb95e44506f6e7b6835e9dad9af2dc81c526442b2e3ec80dd20a",
+      "count": 6,
+      "passed": 5,
+      "model": "grok-4.7-high",
+      "sourceRun": "cursor-grok-47-high-full-20260928",
+      "intendedSampleSize": 614,
+      "paused": true,
+      "full614Score": null,
+      "sampleOrdinals": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sampleScore": 83.33
+    },
+    {
+      "answerFile": "answers/20260928-claude-opus-5-5-high-sample.jsonl",
+      "answerFileSha256": "65b778fc650de86a38d6260d2e440770efee102f3c48d1b4ade48bf70d45bef4",
+      "count": 30,
+      "passed": 29,
+      "model": "claude-opus-5-5-high",
+      "sourceRun": "cursor-opus-55-high-pilot-20260928b",
+      "intendedSampleSize": 30,
+      "paused": false,
+      "full614Score": null,
+      "sampleOrdinals": [
+        11,
+        31,
+        52,
+        72,
+        93,
+        113,
+        134,
+        154,
+        174,
+        195,
+        215,
+        236,
+        256,
+        277,
+        297,
+        318,
+        338,
+        359,
+        379,
+        400,
+        420,
+        441,
+        461,
+        481,
+        502,
+        522,
+        543,
+        563,
+        584,
+        604
+      ],
+      "sampleScore": 96.67
+    }
+  ],
+  "priorOpusLaunch": {
+    "sourceRun": "cursor-opus-55-high-pilot-20260928",
+    "ordinal": 11,
+    "status": "generation_error",
+    "resultCount": 0,
+    "reason": "Workspace trust blocked CLI before any candidate answer. Separate successful pilot retained; no answer was revised."
+  },
+  "grokDisplayCorrection": "Requested grok-4.7-high; CLI reported Grok 4.7 256K High. Original first answer retained; correction added no model calls.",
+  "scope": "Small samples only; excluded from the 614-question leaderboard. No compilation, simulation or hardware validation."
+}

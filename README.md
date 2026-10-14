@@ -2,6 +2,20 @@
 
 基于 [EmbedEval](https://github.com/Ecro/embedeval) 的固定版本 Bugfix 题库，对 614 道公开变体进行逐题新会话测试。每题只采纳模型首次完整答案；通过固定 L0 静态检查和 L3 规则检查计 10 分，否则 0 分，最终折算为百分制。**没有编译、仿真或实机验证，规则分不能等同真实修复率。** 这不是 EmbedEval 官方榜单。[判题器局限](docs/grader-limitations.md)
 
+## 2026-10-09 后续 Max 测试
+
+三组 Max 均完成 614 题，共新增 **1,842 份首次答案**：
+
+| 模型与档位 | 通过 / 614 | 规则分 / 100 |
+|---|---:|---:|
+| GPT-6.1 Sol Max | 564 | 91.86 |
+| GPT-6 Sol Max | 551 | 89.74 |
+| GPT-6 Luna Max | 502 | 81.76 |
+
+[Max 完整成绩与首答索引](results/max-614-20261009.md) · [Luna Max 详细报告](results/gpt-6-luna-max-614-20261009.md) · [成绩和历史价格对比](results/seven-models-scores-prices-20261009.md) · [耗时对比](results/seven-models-speed-20261009.md)。价格和外部测速保留报告所注明的 2026-10-09 历史口径。
+
+另归档 [Cursor 小样本](results/cursor-samples-20260928.md)：Opus High 30 题通过 29 题；Grok High 计划 614 题，在 6 题后暂停、通过 5 题。样本不进入全量排行；Opus 更早的无答案启动失败也单列记录。运行 `python verify_additional_results.py` 可核验新增的 **1,878 份首答**，不调用模型。
+
 ## 七模型 Low 与极高档：各 614 题
 
 沿用同一固定题库、逐题新会话与首次完整答案规则，按两档均分排序。均分从两档的原始通过题数计算后统一四舍五入，避免先舍入单档成绩带来的误差。

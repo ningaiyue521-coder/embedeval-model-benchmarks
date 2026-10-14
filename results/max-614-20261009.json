@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-09",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
+  "questionsPerCombination": 614,
+  "verifiedFirstAnswers": 1842,
+  "freshUniqueSessions": 1842,
+  "modelCallsDuringExport": 0,
+  "compiled": false,
+  "simulated": false,
+  "hardwareVerified": false,
+  "groups": [
+    {
+      "answerFile": "answers/20261009-gpt-6-sol-max.jsonl",
+      "answerFileSha256": "c29f92d5a245f360f3f36a07d4628c06ed7f1b8d3e9ee7d096bc5a5f4fbd4b94",
+      "count": 614,
+      "passed": 551,
+      "model": "gpt-6-sol",
+      "effort": "max",
+      "sourceRun": "gpt6-gpt61-sol-max-614-20261009",
+      "score": 89.74,
+      "meanSecondsIncludingGrading": 55.74,
+      "medianSecondsIncludingGrading": 53.19,
+      "tokens": {
+        "input_tokens": 2953290,
+        "cached_input_tokens": 1510016,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 444855,
+        "reasoning_output_tokens": 207835
+      }
+    },
+    {
+      "answerFile": "answers/20261009-gpt-6.1-sol-max.jsonl",
+      "answerFileSha256": "d76907de39737c5cad0ef71170060bc400c2e0987bdf31269631cc0e594e4a23",
+      "count": 614,
+      "passed": 564,
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "sourceRun": "gpt6-gpt61-sol-max-614-20261009",
+      "score": 91.86,
+      "meanSecondsIncludingGrading": 66.33,
+      "medianSecondsIncludingGrading": 63.97,
+      "tokens": {
+        "input_tokens": 2953404,
+        "cached_input_tokens": 971904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 447855,
+        "reasoning_output_tokens": 210445
+      }
+    },
+    {
+      "answerFile": "answers/20261009-gpt-6-luna-max.jsonl",
+      "answerFileSha256": "2aa05fb22e0f41c8eebc9316e0b40c2a2daef266fe2f547a2bb88b60f5f90164",
+      "count": 614,
+      "passed": 502,
+      "model": "gpt-6-luna",
+      "effort": "max",
+      "sourceRun": "gpt6-luna-max-614-20261009",
+      "score": 81.76,
+      "meanSecondsIncludingGrading": 57.8,
+      "medianSecondsIncludingGrading": 58.9,
+      "tokens": {
+        "input_tokens": 2953133,
+        "cached_input_tokens": 2080768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 603599,
+        "reasoning_output_tokens": 366724
+      }
+    }
+  ],
+  "sourceAudit": {
+    "firstAnswersVerified": 1842,
+    "uniqueSessions": 1842,
+    "toolCalls": 0,
+    "regradedWithFrozenL0L3": true,
+    "modelCallsDuringAudit": 0
+  }
+}
