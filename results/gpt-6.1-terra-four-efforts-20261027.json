@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-27",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
+  "questionsPerCombination": 614,
+  "verifiedFirstAnswers": 2456,
+  "freshUniqueSessions": 2456,
+  "modelCallsDuringExport": 0,
+  "strictSingleNetworkRequestVerified": false,
+  "compiled": false,
+  "simulated": false,
+  "hardwareVerified": false,
+  "groups": [
+    {
+      "model": "gpt-6.1-terra",
+      "effort": "low",
+      "sourceRun": "gpt61-terra-four-efforts-614-20261027",
+      "answerFile": "answers/20261027-gpt-6.1-terra-low.jsonl",
+      "answerFileSha256": "a670df345e9120bd69af3f224a4739ec12c808b4f3b8d77635f9816e6f5ff6eb",
+      "count": 614,
+      "passed": 522,
+      "score": 85.02,
+      "tokens": {
+        "input_tokens": 3444043,
+        "cached_input_tokens": 2129024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 238869,
+        "reasoning_output_tokens": 1506
+      },
+      "transportRetryWarningCases": 301
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "effort": "high",
+      "sourceRun": "gpt61-terra-four-efforts-614-20261027",
+      "answerFile": "answers/20261027-gpt-6.1-terra-high.jsonl",
+      "answerFileSha256": "e42ce3a18821cdfbe1a649cd7766fe7d6fece7b700270bef74af6a65c19c6693",
+      "count": 614,
+      "passed": 527,
+      "score": 85.83,
+      "tokens": {
+        "input_tokens": 3444043,
+        "cached_input_tokens": 2078592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 266745,
+        "reasoning_output_tokens": 27850
+      },
+      "transportRetryWarningCases": 298
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "effort": "xhigh",
+      "sourceRun": "gpt61-terra-four-efforts-614-20261027",
+      "answerFile": "answers/20261027-gpt-6.1-terra-xhigh.jsonl",
+      "answerFileSha256": "edd8c9b2739b48431ef1aa680c496a2f17616a6c8b10848390a53179f4ed1442",
+      "count": 614,
+      "passed": 534,
+      "score": 86.97,
+      "tokens": {
+        "input_tokens": 3444043,
+        "cached_input_tokens": 2024704,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 295442,
+        "reasoning_output_tokens": 56120
+      },
+      "transportRetryWarningCases": 295
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "effort": "max",
+      "sourceRun": "gpt61-terra-four-efforts-614-20261027",
+      "answerFile": "answers/20261027-gpt-6.1-terra-max.jsonl",
+      "answerFileSha256": "80c7f3753563f8b7e3990478445a84b016ea295ef49ddfee312ef40a82f397d7",
+      "count": 614,
+      "passed": 543,
+      "score": 88.44,
+      "tokens": {
+        "input_tokens": 3453885,
+        "cached_input_tokens": 2075648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 755760,
+        "reasoning_output_tokens": 514961
+      },
+      "transportRetryWarningCases": 299
+    }
+  ]
+}

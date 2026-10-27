@@ -6,7 +6,7 @@
 
 | 题库 | 已测模型 | 已测档位组合 | 计分题次 |
 |:---:|:---:|:---:|:---:|
-| **614 题** | **8 款** | **18 组** | **11,052** |
+| **614 题** | **9 款** | **22 组** | **13,508** |
 
 > 冻结 **L0 静态检查 + L3 规则检查**；未编译、仿真或实机验证。规则分不等于真实修复率，本项目不是 EmbedEval 官方榜单。
 
@@ -15,10 +15,11 @@
 所有已测档位统一以 **614 题为分母**。表格显示「百分制规则分 / 通过题数」；`—` 表示未测。按各模型**最高已测档位**排序，高亮该档成绩；High、Xhigh、Max 分列，不视作相同推理设置。
 
 | 模型 | Low | High | Xhigh（极高） | Max |
-|:---|---:|---:|---:|---:|---:|
+|:---|---:|---:|---:|---:|
 | GPT-6 Astra | 91.04 / 559 | — | **91.86 / 564** | — |
 | GPT-6.1 Sol | 90.72 / 557 | — | 91.37 / 561 | **91.86 / 564** |
 | GPT-6 Sol | 86.81 / 533 | — | 88.27 / 542 | **89.74 / 551** |
+| GPT-6.1 Terra | 85.02 / 522 | 85.83 / 527 | 86.97 / 534 | **88.44 / 543** |
 | GPT-5.5 | 84.85 / 521 | — | **88.11 / 541** | — |
 | Grok 4.7 | — | **87.95 / 540** | — | — |
 | GPT-5.6 Sol | 83.88 / 515 | — | **86.81 / 533** | — |
@@ -27,16 +28,19 @@
 
 ![各模型最高已测规则分，统一以 614 题为分母，档位分别标注](assets/best-complete-scores.svg)
 
+**2026-10-27 更新：**新增 GPT-6.1 Terra 的 Low、High、Xhigh 和 Max 四档各 614 题。每题保留首次最终答案；CLI 存在传输重连，不能证明每题只有一次网络请求。[Terra 详细报告](results/gpt-6.1-terra-four-efforts-20261027.md)
+
 **2026-10-14 更新：**Grok 4.7 High 纳入总表，540 题通过，**87.95 分**。611 题有首答，3 次尝试无有效最终答案计 0 分，未重答。旧的 88.38 分只反映已答题比例，不作为本榜成绩。[Grok 详细报告](results/grok-4.7-high-stopped-20261014.md)
 
-[总表机器可读数据](results/all-models-summary-20261014.json) · [Low/Xhigh 对比](results/seven-models-low-xhigh-20261008.md) · [三组 Max](results/max-614-20261009.md) · [历史价格](results/seven-models-scores-prices-20261009.md) · [耗时对比](results/seven-models-speed-20261009.md)
+[总表机器可读数据](results/all-models-summary-20261027.json) · [Low/Xhigh 对比](results/seven-models-low-xhigh-20261008.md) · [三组 Max](results/max-614-20261009.md) · [历史价格](results/seven-models-scores-prices-20261009.md) · [耗时对比](results/seven-models-speed-20261009.md)
 
 ## 报告导航
 
 | 内容 | 报告 | 口径 |
 |:---|:---|:---|
-| 八模型成绩总表 | [汇总数据](results/all-models-summary-20261014.json) | 18 个档位组合，统一分母 614 |
+| 九模型成绩总表 | [汇总数据](results/all-models-summary-20261027.json) | 22 个档位组合，统一分母 614 |
 | Grok 4.7 High | [614 题成绩](results/grok-4.7-high-stopped-20261014.md) | 540 题通过，3 次无有效答案计 0 |
+| GPT-6.1 Terra 四档 | [详细成绩](results/gpt-6.1-terra-four-efforts-20261027.md) | 4 组 × 614 题，首次答案及重连记录 |
 | 七模型 Low / Xhigh | [详细对比](results/seven-models-low-xhigh-20261008.md) | 14 组 × 614 题 |
 | 三模型 Max | [详细成绩](results/max-614-20261009.md) | 3 组 × 614 题 |
 | Claude Opus High | [Cursor 小样本](results/cursor-samples-20260928.md) | 30 题通过 29 题，样本不进入主表 |

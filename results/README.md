@@ -2,7 +2,8 @@
 
 | 状态 | 报告 | 机器可读数据 |
 |---|---|---|
-| 主表：8 模型、18 组档位 | [返回首页](../README.md) | [统一分母 614 的汇总](all-models-summary-20261014.json) |
+| 主表：9 模型、22 组档位 | [返回首页](../README.md) | [统一分母 614 的汇总](all-models-summary-20261027.json) |
+| 完整：4 组 × 614 题 | [GPT-6.1 Terra 四档](gpt-6.1-terra-four-efforts-20261027.md) | [JSON](gpt-6.1-terra-four-efforts-20261027.json) |
 | 完整：14 组 × 614 题 | [七模型 Low/Xhigh](seven-models-low-xhigh-20261008.md) | [JSON](seven-models-low-xhigh-20261008.json) |
 | 完整：3 组 × 614 题 | [三模型 Max](max-614-20261009.md) | [JSON](max-614-20261009.json) |
 | 主表计分：614 次尝试 | [Grok 4.7 High · 2026-10-14](grok-4.7-high-stopped-20261014.md) | [JSON](grok-4.7-high-stopped-20261014.json) |
