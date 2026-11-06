@@ -1,0 +1,201 @@
+{
+  "verifiedAt": "2026-11-06T18:47:31+08:00",
+  "firstAnswersVerified": 5526,
+  "uniqueSessions": 5526,
+  "toolCalls": 0,
+  "modelCallsDuringAudit": 0,
+  "regradedWithFrozenL0L3": true,
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
+  "scope": "仅官方 L0 静态检查 + L3 规则检查；未编译、未仿真、未实机验证",
+  "groups": [
+    {
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "total": 614,
+      "passed": 474,
+      "score": 77.2,
+      "answerFile": "answers/20261106-gpt-5.6-luna-high.jsonl",
+      "answerFileSha256": "d53b774693ae49181083db4828093b1eefd483c4e7c324c32aca20116d9f413b",
+      "tokens": {
+        "input_tokens": 2184813,
+        "cached_input_tokens": 1318784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 425509,
+        "reasoning_output_tokens": 189736
+      },
+      "meanSeconds": 32.25,
+      "medianSeconds": 29.94,
+      "transportWarningCases": 241
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "total": 614,
+      "passed": 523,
+      "score": 85.18,
+      "answerFile": "answers/20261106-gpt-5.6-sol-high.jsonl",
+      "answerFileSha256": "0310b7bc6631d600658534d80c5a33bbb8fa7b156d5612f2791aca9d7170ac73",
+      "tokens": {
+        "input_tokens": 3107141,
+        "cached_input_tokens": 1831424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 305371,
+        "reasoning_output_tokens": 69608
+      },
+      "meanSeconds": 28.48,
+      "medianSeconds": 27.44,
+      "transportWarningCases": 242
+    },
+    {
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "total": 614,
+      "passed": 503,
+      "score": 81.92,
+      "answerFile": "answers/20261106-gpt-6-luna-high.jsonl",
+      "answerFileSha256": "87b03ec327d9b3299dc7494b1a133f461e85858256269a4d6764a50790c2ef6e",
+      "tokens": {
+        "input_tokens": 3446229,
+        "cached_input_tokens": 1888128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 401514,
+        "reasoning_output_tokens": 165014
+      },
+      "meanSeconds": 105.95,
+      "medianSeconds": 54.57,
+      "transportWarningCases": 542
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "effort": "max",
+      "total": 614,
+      "passed": 484,
+      "score": 78.83,
+      "answerFile": "answers/20261106-gpt-5.6-luna-max.jsonl",
+      "answerFileSha256": "17ea2ba28c3baf125cb9fad5e8456d6d81ad8e626c1b2eb5935d3cee30df91a2",
+      "tokens": {
+        "input_tokens": 2217127,
+        "cached_input_tokens": 1317120,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 888143,
+        "reasoning_output_tokens": 652777
+      },
+      "meanSeconds": 51.59,
+      "medianSeconds": 36.53,
+      "transportWarningCases": 237
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "max",
+      "total": 614,
+      "passed": 538,
+      "score": 87.62,
+      "answerFile": "answers/20261106-gpt-5.6-sol-max.jsonl",
+      "answerFileSha256": "a340bcfd7a5f5fe3556485bbea965f6510f68b0f786ce438c05edcb1cd3b98ca",
+      "tokens": {
+        "input_tokens": 3111980,
+        "cached_input_tokens": 1821824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 395632,
+        "reasoning_output_tokens": 159862
+      },
+      "meanSeconds": 32.56,
+      "medianSeconds": 29.78,
+      "transportWarningCases": 230
+    },
+    {
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "total": 614,
+      "passed": 560,
+      "score": 91.21,
+      "answerFile": "answers/20261106-gpt-6-astra-high.jsonl",
+      "answerFileSha256": "cb86de13ddee8e8e48cc108f55e8707cdb693c1dfeb5bef84f66329a61d5ac35",
+      "tokens": {
+        "input_tokens": 3446514,
+        "cached_input_tokens": 2113408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 277018,
+        "reasoning_output_tokens": 39422
+      },
+      "meanSeconds": 38.07,
+      "medianSeconds": 37.5,
+      "transportWarningCases": 296
+    },
+    {
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "total": 614,
+      "passed": 545,
+      "score": 88.76,
+      "answerFile": "answers/20261106-gpt-6-sol-high.jsonl",
+      "answerFileSha256": "90532a908631249378db2daae5b161d2217d0910a2b6d784ee32a59c473af75f",
+      "tokens": {
+        "input_tokens": 3446725,
+        "cached_input_tokens": 2099456,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 335146,
+        "reasoning_output_tokens": 98551
+      },
+      "meanSeconds": 37.61,
+      "medianSeconds": 36.66,
+      "transportWarningCases": 298
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "total": 614,
+      "passed": 559,
+      "score": 91.04,
+      "answerFile": "answers/20261106-gpt-6.1-sol-high.jsonl",
+      "answerFileSha256": "4bc597e85d12d421b7de8b3186e33aa25407e1edc935d954eb1325a3864bd04f",
+      "tokens": {
+        "input_tokens": 3446725,
+        "cached_input_tokens": 2086400,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 308526,
+        "reasoning_output_tokens": 71000
+      },
+      "meanSeconds": 38.72,
+      "medianSeconds": 37.9,
+      "transportWarningCases": 297
+    },
+    {
+      "model": "gpt-6-astra",
+      "effort": "max",
+      "total": 614,
+      "passed": 564,
+      "score": 91.86,
+      "answerFile": "answers/20261106-gpt-6-astra-max.jsonl",
+      "answerFileSha256": "d879e35caea172c8cc9d7612b975c3919c3477e52ffe245baaf6fe7a683466fe",
+      "tokens": {
+        "input_tokens": 3444595,
+        "cached_input_tokens": 1970176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 459237,
+        "reasoning_output_tokens": 221763
+      },
+      "meanSeconds": 54.26,
+      "medianSeconds": 43.99,
+      "transportWarningCases": 300
+    }
+  ],
+  "protocol": {
+    "questionsPerCombination": 614,
+    "firstFinalAnswersPerQuestion": 1,
+    "freshEphemeralSessionPerRequest": true,
+    "toolsAllowed": false,
+    "feedbackToCandidate": false,
+    "retryOnlyTransportFailuresWithoutAnswer": true,
+    "candidateInstructions": "You are completing a single-attempt code repair benchmark.\nSolve only the problem provided in the user message. Output only the complete\ncorrected source file. Do not use the filesystem, execute code, browse, consult\nexternal resources, or invoke tools. You do not have access to reference answers\nor grader feedback. Do not request clarification or a second attempt.\n",
+    "candidateInstructionsSha256": "cde88a4bdd73eab6fad15cecc2c92d54046a6da7dabf41b2bfae61f4975463e7",
+    "gradingLayers": [
+      0,
+      3
+    ],
+    "compiled": false,
+    "simulated": false,
+    "hardwareVerified": false
+  }
+}

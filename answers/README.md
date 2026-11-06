@@ -1,6 +1,6 @@
 # 首次答案
 
-25 份 JSONL 合计 **14,351 条记录**。其中七模型完整 Low / 极高总榜采用 8,596 份首答，后续三组 Max 采用 1,842 份首答；GPT-6.1 Terra 四档新增 2,456 份首答。新增 Grok 停止轮次包含 611 份首答和 3 条无最终答案的异常记录；其前 6 份答卷与历史样本重复，不作为新增模型答案计数。其他历史试跑、小样本或暂停记录不计入全量排名。
+34 份 JSONL 合计 **19,877 条记录**。其中七模型完整 Low / 极高总榜采用 8,596 份首答，后续三组 Max 采用 1,842 份首答；GPT-6.1 Terra 四档新增 2,456 份首答。新增 Grok 停止轮次包含 611 份首答和 3 条无最终答案的异常记录；其前 6 份答卷与历史样本重复，不作为新增模型答案计数。其他历史试跑、小样本或暂停记录不计入全量排名。
 
 `firstAnswer` 为首次最终答案，`checks` 为原始逐项规则结果。Grok 的 3 条异常记录中 `firstAnswer`、`answerHash` 和 `passed` 均为 `null`，不会冒充已评分失败答卷。
 
@@ -35,3 +35,17 @@
 | [starter-10.jsonl](starter-10.jsonl) | 380 |
 
 从仓库根目录运行 `python verify_all_models.py` 核验七模型总榜，运行 `python verify_gpt61.py` 核验 GPT-6.1 Sol 答卷，运行 `python verify_results.py` 核验原有历史轮次，运行 `python verify_additional_results.py` 核验后续 Max 与 Cursor 样本，运行 `python verify_grok_stopped.py` 核验本轮 Grok 记录。运行 `python verify_terra_results.py` 核验 Terra 四档及新总表。均不调用模型。
+
+## 2026-11-06 新增九档
+
+新增 5,526 份首答，全部逐题核验并以冻结规则复评分一致。
+
+- [20261106-gpt-5.6-luna-high.jsonl](20261106-gpt-5.6-luna-high.jsonl)：614 份。
+- [20261106-gpt-5.6-sol-high.jsonl](20261106-gpt-5.6-sol-high.jsonl)：614 份。
+- [20261106-gpt-6-luna-high.jsonl](20261106-gpt-6-luna-high.jsonl)：614 份。
+- [20261106-gpt-5.6-luna-max.jsonl](20261106-gpt-5.6-luna-max.jsonl)：614 份。
+- [20261106-gpt-5.6-sol-max.jsonl](20261106-gpt-5.6-sol-max.jsonl)：614 份。
+- [20261106-gpt-6-astra-high.jsonl](20261106-gpt-6-astra-high.jsonl)：614 份。
+- [20261106-gpt-6-sol-high.jsonl](20261106-gpt-6-sol-high.jsonl)：614 份。
+- [20261106-gpt-6.1-sol-high.jsonl](20261106-gpt-6.1-sol-high.jsonl)：614 份。
+- [20261106-gpt-6-astra-max.jsonl](20261106-gpt-6-astra-max.jsonl)：614 份。

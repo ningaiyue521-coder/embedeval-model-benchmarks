@@ -1,4 +1,4 @@
-"""Check the eight-model comparison against frozen source summaries. No model calls."""
+"""Check the nine-model comparison against frozen source summaries. No model calls."""
 from pathlib import Path
 import hashlib
 import json
@@ -7,7 +7,7 @@ def read(name): return json.loads((ROOT/name).read_text(encoding='utf-8'))
 def need(ok,message):
     if not ok: raise ValueError(message)
 def verify():
-    combined=read('results/all-models-summary-20261014.json')
+    combined=read('results/all-models-summary-20261106.json')
     for source in combined['sourceSummaries']:
         need(hashlib.sha256((ROOT/source['path']).read_bytes()).hexdigest()==source['sha256'],'Source hash')
     expected={}
@@ -17,7 +17,14 @@ def verify():
         expected[g['model']]['max']=g['passed']
     grok=read('results/grok-4.7-high-stopped-20261014.json')
     expected[grok['model']]={'high':grok['passed']}
-    need(len(combined['models'])==combined['modelsCount']==8 and {m['model'] for m in combined['models']}==set(expected),'Model set')
+    terra=read('results/gpt-6.1-terra-four-efforts-20261027.json')
+    for g in terra['groups']:
+        expected.setdefault(g['model'],{})[g['effort']]=g['passed']
+    new=read('results/missing-nine-tiers-20261106.json')
+    for g in new['groups']:
+        need(g['effort'] not in expected[g['model']],'Overlapping new tier')
+        expected[g['model']][g['effort']]=g['passed']
+    need(len(combined['models'])==combined['modelsCount']==9 and {m['model'] for m in combined['models']}==set(expected),'Model set')
     groups=0
     for m in combined['models']:
         need(set(m['groups'])==set(expected[m['model']]),'Effort set')
@@ -29,7 +36,7 @@ def verify():
             groups+=1
         best=max(m['groups'].values(),key=lambda g:g['passed'])
         need(m['best']==best,'Best measured effort')
-    need(groups==combined['combinations']==18 and combined['scoredAttempts']==18*614==11052,'Totals')
+    need(groups==combined['combinations']==31 and combined['scoredAttempts']==31*614==19034,'Totals')
     need(combined['models']==sorted(combined['models'],key=lambda m:-m['best']['passed']),'Order')
-    return {'ok':True,'models':8,'combinations':18,'denominator':614,'grokScore':87.95,'modelCalls':0}
+    return {'ok':True,'models':9,'combinations':31,'denominator':614,'grokScore':87.95,'modelCalls':0}
 if __name__=='__main__': print(json.dumps(verify(),ensure_ascii=False,indent=2))

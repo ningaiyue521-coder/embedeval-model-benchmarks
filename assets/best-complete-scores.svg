@@ -29,12 +29,12 @@
 <text x="735" y="272" font-family="sans-serif" font-size="14" fill="#18243b">87.95 (high, 540/614)</text>
 <text x="25" y="313" font-family="sans-serif" font-size="15" fill="#18243b">GPT-5.6 Sol</text>
 <rect x="225" y="295" width="500" height="22" rx="4" fill="#dce5ef"/>
-<rect x="225" y="295" width="434.1" height="22" rx="4" fill="#2876be"/>
-<text x="735" y="312" font-family="sans-serif" font-size="14" fill="#18243b">86.81 (xhigh, 533/614)</text>
+<rect x="225" y="295" width="438.1" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="312" font-family="sans-serif" font-size="14" fill="#18243b">87.62 (max, 538/614)</text>
 <text x="25" y="353" font-family="sans-serif" font-size="15" fill="#18243b">GPT-6 Luna</text>
 <rect x="225" y="335" width="500" height="22" rx="4" fill="#dce5ef"/>
-<rect x="225" y="335" width="408.8" height="22" rx="4" fill="#2876be"/>
-<text x="735" y="352" font-family="sans-serif" font-size="14" fill="#18243b">81.76 (max, 502/614)</text>
+<rect x="225" y="335" width="409.6" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="352" font-family="sans-serif" font-size="14" fill="#18243b">81.92 (high, 503/614)</text>
 <text x="25" y="393" font-family="sans-serif" font-size="15" fill="#18243b">GPT-5.6 Luna</text>
 <rect x="225" y="375" width="500" height="22" rx="4" fill="#dce5ef"/>
 <rect x="225" y="375" width="395.8" height="22" rx="4" fill="#2876be"/>
