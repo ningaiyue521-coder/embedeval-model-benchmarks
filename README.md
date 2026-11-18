@@ -28,7 +28,7 @@
 | GPT-6 Luna | 80.29 / 493 | **81.92 / 503** | 81.11 / 498 | 81.76 / 502 |
 | GPT-5.6 Luna | 78.18 / 480 | 77.20 / 474 | **79.15 / 486** | 78.83 / 484 |
 
-![各模型最高已测规则分，统一以 614 题为分母，档位分别标注](assets/best-complete-scores.svg)
+![各模型最高已测规则分，统一以 614 题为分母，档位分别标注](assets/best-complete-scores-20261118.svg)
 
 **2026-11-18 批次**　新增 GPT-6.2 Sol 的四档成绩，以及 Astra 的 Low、XHigh，共 3,684 份首答。主榜按各模型最高单档成绩重新排序。[成绩与答卷](results/gpt-6.2-sol-astra-20261118.md)
 
@@ -38,19 +38,20 @@
 
 **2026-10-14 更新：**Grok 4.7 High 纳入总表，540 题通过，**87.95 分**。611 题有首答，3 次尝试无有效最终答案计 0 分，未重答。旧的 88.38 分只反映已答题比例，不作为本榜成绩。[Grok 详细报告](results/grok-4.7-high-stopped-20261014.md)
 
-[总表机器可读数据](results/all-models-summary-20261118.json) · [Low/Xhigh 对比](results/seven-models-low-xhigh-20261008.md) · [三组 Max](results/max-614-20261009.md) · [历史价格](results/seven-models-scores-prices-20261009.md) · [耗时对比](results/seven-models-speed-20261009.md)
+[总表机器可读数据](results/all-models-summary-20261118.json) · [Low/XHigh 均分排名](results/rankings-20261118.md#low-与-xhigh-均分排名) · [Max 档排名](results/rankings-20261118.md#max-档排名) · [历史价格](results/seven-models-scores-prices-20261009.md) · [历史耗时](results/seven-models-speed-20261009.md)
 
 ## 报告导航
 
 | 内容 | 报告 | 口径 |
 |:---|:---|:---|
 | 11 款模型成绩总表 | [汇总数据](results/all-models-summary-20261118.json) | 37 个档位组合，统一分母 614 |
+| Low/XHigh 均分与 Max 排名 | [当前档位排名](results/rankings-20261118.md) | 统一分母 614 |
 | GPT-6.2 Sol / Astra | [详细成绩](results/gpt-6.2-sol-astra-20261118.md) | 6 组 × 614 题，首次答案与逐题核验 |
 | 2026-11-06 补齐九档 | [新增成绩](results/missing-nine-tiers-20261106.md) | 9 组 × 614 题，首次答案与逐题核验 |
 | Grok 4.7 High | [614 题成绩](results/grok-4.7-high-stopped-20261014.md) | 540 题通过，3 次无有效答案计 0 |
 | GPT-6.1 Terra 四档 | [详细成绩](results/gpt-6.1-terra-four-efforts-20261027.md) | 4 组 × 614 题，首次答案及重连记录 |
-| 七模型 Low / Xhigh | [详细对比](results/seven-models-low-xhigh-20261008.md) | 14 组 × 614 题 |
-| 三模型 Max | [详细成绩](results/max-614-20261009.md) | 3 组 × 614 题 |
+| 历史 Low / XHigh · 2026-10-08 | [详细对比](results/seven-models-low-xhigh-20261008.md) | 14 组 × 614 题 |
+| 历史 Max · 2026-10-09 | [详细成绩](results/max-614-20261009.md) | 3 组 × 614 题 |
 | Claude Opus High | [Cursor 小样本](results/cursor-samples-20260928.md) | 30 题通过 29 题，样本不进入主表 |
 | GPT-5.6 Terra Low | [暂停记录](results/partial-terra-low-20260928.json) | 127 题局部样本，无全量成绩 |
 | 早期试跑 | [10 题矩阵](results/starter-10.json) | 38 组、380 份首答 |
