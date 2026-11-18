@@ -1,0 +1,319 @@
+{
+  "date": "2026-11-18",
+  "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
+  "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
+  "questionsPerCombination": 614,
+  "verifiedFirstAnswers": 3684,
+  "uniqueSessions": 3684,
+  "finished": "2026-11-18T12:30:54+08:00",
+  "toolsUsed": 0,
+  "modelCallsDuringAudit": 0,
+  "regradedWithFrozenL0L3": true,
+  "scope": "仅官方 L0 静态检查 + L3 规则检查；未编译、未仿真、未实机验证",
+  "effortSourceRuns": {
+    "low": "gpt62-sol-astra-low-xhigh-614-20261118",
+    "high": "gpt62-sol-astra-high-max-614-20261118",
+    "xhigh": "gpt62-sol-astra-low-xhigh-614-20261118",
+    "max": "gpt62-sol-astra-high-max-614-20261118"
+  },
+  "formatErrorsCountedZero": 0,
+  "protocol": {
+    "firstFinalAnswersPerQuestion": 1,
+    "freshEphemeralSessionPerQuestion": true,
+    "toolsAllowed": false,
+    "feedbackToCandidate": false,
+    "compiled": false,
+    "simulated": false,
+    "hardwareVerified": false,
+    "gradingLayers": [
+      0,
+      3
+    ],
+    "candidateInstructions": "You are completing a single-attempt code repair benchmark.\nSolve only the problem provided in the user message. Output only the complete\ncorrected source file. Do not use the filesystem, execute code, browse, consult\nexternal resources, or invoke tools. You do not have access to reference answers\nor grader feedback. Do not request clarification or a second attempt.\n",
+    "candidateInstructionsSha256": "cde88a4bdd73eab6fad15cecc2c92d54046a6da7dabf41b2bfae61f4975463e7",
+    "batchWorkerLimit": 64,
+    "transportRetriesWithoutFirstAnswer": [
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "low",
+        "ordinal": 611,
+        "sourceRun": "gpt62-sol-astra-low-xhigh-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "model": "gpt-6.2-sol",
+      "effort": "low",
+      "count": 614,
+      "passed": 530,
+      "score": 86.32,
+      "answerFile": "answers/20261118-gpt-6.2-sol-low.jsonl",
+      "answerFileSha256": "26052edff765fc8673fee12f085805d79ee31484fefd962d24bdca39f88befbb",
+      "formatErrorsCountedZero": 0,
+      "bySdk": {
+        "embedded-linux": {
+          "total": 569,
+          "passed": 493
+        },
+        "esp-idf": {
+          "total": 2,
+          "passed": 2
+        },
+        "zephyr": {
+          "total": 43,
+          "passed": 35
+        }
+      },
+      "meanSecondsIncludingGrading": 36.44,
+      "finished": "2026-11-18T09:55:51+08:00",
+      "tokens": {
+        "input_tokens": 3466987,
+        "cached_input_tokens": 1465600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 246890,
+        "reasoning_output_tokens": 9092
+      },
+      "transportWarningCases": 188,
+      "intermediateMessages": 0,
+      "sourceRun": "gpt62-sol-astra-low-xhigh-614-20261118",
+      "medianSecondsIncludingGrading": 34.91
+    },
+    {
+      "model": "gpt-6.2-sol",
+      "effort": "high",
+      "count": 614,
+      "passed": 555,
+      "score": 90.39,
+      "answerFile": "answers/20261118-gpt-6.2-sol-high.jsonl",
+      "answerFileSha256": "5f5b4ba94f344884db0f3bc2ea15ee7c35afea07e11b98e082b95f2902160636",
+      "formatErrorsCountedZero": 0,
+      "bySdk": {
+        "embedded-linux": {
+          "total": 569,
+          "passed": 516
+        },
+        "esp-idf": {
+          "total": 2,
+          "passed": 2
+        },
+        "zephyr": {
+          "total": 43,
+          "passed": 37
+        }
+      },
+      "meanSecondsIncludingGrading": 27.1,
+      "finished": "2026-11-18T12:28:05+08:00",
+      "tokens": {
+        "input_tokens": 3469531,
+        "cached_input_tokens": 1747584,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 340631,
+        "reasoning_output_tokens": 102553
+      },
+      "transportWarningCases": 149,
+      "intermediateMessages": 0,
+      "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+      "medianSecondsIncludingGrading": 25.32
+    },
+    {
+      "model": "gpt-6.2-sol",
+      "effort": "xhigh",
+      "count": 614,
+      "passed": 558,
+      "score": 90.88,
+      "answerFile": "answers/20261118-gpt-6.2-sol-xhigh.jsonl",
+      "answerFileSha256": "5e57f842cb266a2f0440de01ca30589fab49f17128d8162869bbe86cf6e88c2d",
+      "formatErrorsCountedZero": 0,
+      "bySdk": {
+        "embedded-linux": {
+          "total": 569,
+          "passed": 518
+        },
+        "esp-idf": {
+          "total": 2,
+          "passed": 2
+        },
+        "zephyr": {
+          "total": 43,
+          "passed": 38
+        }
+      },
+      "meanSecondsIncludingGrading": 45.17,
+      "finished": "2026-11-18T09:51:06+08:00",
+      "tokens": {
+        "input_tokens": 3467122,
+        "cached_input_tokens": 1486208,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 402208,
+        "reasoning_output_tokens": 163755
+      },
+      "transportWarningCases": 186,
+      "intermediateMessages": 0,
+      "sourceRun": "gpt62-sol-astra-low-xhigh-614-20261118",
+      "medianSecondsIncludingGrading": 40.02
+    },
+    {
+      "model": "gpt-6.2-sol",
+      "effort": "max",
+      "count": 614,
+      "passed": 565,
+      "score": 92.02,
+      "answerFile": "answers/20261118-gpt-6.2-sol-max.jsonl",
+      "answerFileSha256": "5e0ca0aeb390eecec47ce95b8b31a2d549a6fc89630620a7c8a18954d44d2956",
+      "formatErrorsCountedZero": 0,
+      "bySdk": {
+        "embedded-linux": {
+          "total": 569,
+          "passed": 526
+        },
+        "esp-idf": {
+          "total": 2,
+          "passed": 2
+        },
+        "zephyr": {
+          "total": 43,
+          "passed": 37
+        }
+      },
+      "meanSecondsIncludingGrading": 41.12,
+      "finished": "2026-11-18T12:30:54+08:00",
+      "tokens": {
+        "input_tokens": 3471793,
+        "cached_input_tokens": 1758720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 715922,
+        "reasoning_output_tokens": 477428
+      },
+      "transportWarningCases": 140,
+      "intermediateMessages": 1,
+      "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+      "medianSecondsIncludingGrading": 33.95
+    },
+    {
+      "model": "gpt-6.2-astra",
+      "effort": "low",
+      "count": 614,
+      "passed": 554,
+      "score": 90.23,
+      "answerFile": "answers/20261118-gpt-6.2-astra-low.jsonl",
+      "answerFileSha256": "7557c6801247f4c146708a6894107cbcc71508ac7ed0c2decc8ddb364a60fe43",
+      "formatErrorsCountedZero": 0,
+      "bySdk": {
+        "embedded-linux": {
+          "total": 569,
+          "passed": 515
+        },
+        "esp-idf": {
+          "total": 2,
+          "passed": 2
+        },
+        "zephyr": {
+          "total": 43,
+          "passed": 37
+        }
+      },
+      "meanSecondsIncludingGrading": 40.66,
+      "finished": "2026-11-18T10:00:04+08:00",
+      "tokens": {
+        "input_tokens": 3466985,
+        "cached_input_tokens": 1980160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 238651,
+        "reasoning_output_tokens": 2027
+      },
+      "transportWarningCases": 201,
+      "intermediateMessages": 0,
+      "sourceRun": "gpt62-sol-astra-low-xhigh-614-20261118",
+      "medianSecondsIncludingGrading": 37.59
+    },
+    {
+      "model": "gpt-6.2-astra",
+      "effort": "xhigh",
+      "count": 614,
+      "passed": 568,
+      "score": 92.51,
+      "answerFile": "answers/20261118-gpt-6.2-astra-xhigh.jsonl",
+      "answerFileSha256": "4520dbaff3506be9be4f1534f9e98c50a72d3d878a1058d0d2733426a421f267",
+      "formatErrorsCountedZero": 0,
+      "bySdk": {
+        "embedded-linux": {
+          "total": 569,
+          "passed": 529
+        },
+        "esp-idf": {
+          "total": 2,
+          "passed": 2
+        },
+        "zephyr": {
+          "total": 43,
+          "passed": 37
+        }
+      },
+      "meanSecondsIncludingGrading": 48.83,
+      "finished": "2026-11-18T09:56:16+08:00",
+      "tokens": {
+        "input_tokens": 3466987,
+        "cached_input_tokens": 1863936,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 358668,
+        "reasoning_output_tokens": 120961
+      },
+      "transportWarningCases": 205,
+      "intermediateMessages": 0,
+      "sourceRun": "gpt62-sol-astra-low-xhigh-614-20261118",
+      "medianSecondsIncludingGrading": 41.68
+    }
+  ],
+  "comparisons": {
+    "gpt-6.2-sol": {
+      "baselineModel": "gpt-6.1-sol",
+      "baselineDisplayName": "GPT-6.1 Sol",
+      "byEffort": {
+        "low": {
+          "baselinePassed": 557,
+          "baselineScore": 90.72,
+          "deltaPassed": -27,
+          "deltaPoints": -4.4
+        },
+        "high": {
+          "baselinePassed": 559,
+          "baselineScore": 91.04,
+          "deltaPassed": -4,
+          "deltaPoints": -0.65
+        },
+        "xhigh": {
+          "baselinePassed": 561,
+          "baselineScore": 91.37,
+          "deltaPassed": -3,
+          "deltaPoints": -0.49
+        },
+        "max": {
+          "baselinePassed": 564,
+          "baselineScore": 91.86,
+          "deltaPassed": 1,
+          "deltaPoints": 0.16
+        }
+      }
+    },
+    "gpt-6.2-astra": {
+      "baselineModel": "gpt-6-astra",
+      "baselineDisplayName": "GPT-6 Astra",
+      "byEffort": {
+        "low": {
+          "baselinePassed": 559,
+          "baselineScore": 91.04,
+          "deltaPassed": -5,
+          "deltaPoints": -0.81
+        },
+        "xhigh": {
+          "baselinePassed": 564,
+          "baselineScore": 91.86,
+          "deltaPassed": 4,
+          "deltaPoints": 0.65
+        }
+      }
+    }
+  }
+}
