@@ -3,9 +3,9 @@
   "sourceRevision": "fdbcb9b93476149cce2d395532bf5164811fe053",
   "catalogSha256": "df275603d4367c643e4b747ba3fc8ec93c44894631daa2cb2c6a7201d0033a93",
   "questionsPerCombination": 614,
-  "verifiedFirstAnswers": 3684,
-  "uniqueSessions": 3684,
-  "finished": "2026-11-18T12:30:54+08:00",
+  "verifiedFirstAnswers": 4912,
+  "uniqueSessions": 4912,
+  "finished": "2026-11-19T15:57:10+08:00",
   "toolsUsed": 0,
   "modelCallsDuringAudit": 0,
   "regradedWithFrozenL0L3": true,
@@ -38,6 +38,587 @@
         "effort": "low",
         "ordinal": 611,
         "sourceRun": "gpt62-sol-astra-low-xhigh-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 17,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 16,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 4,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 2,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 3,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 9,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 6,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 3,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 10,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 4,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 2,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 14,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 15,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 16,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 7,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 9,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 13,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 10,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 11,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 6,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 17,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 5,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 8,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 5,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 15,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 7,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 28,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 28,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 29,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 29,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 30,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 30,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 31,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 32,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 32,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 33,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 33,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 34,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 34,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 35,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 35,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 36,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 37,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 37,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 38,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 38,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 42,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 42,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 43,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 43,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 44,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 44,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 45,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 45,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 47,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 47,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 53,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 56,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 45,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 44,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 44,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 43,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 47,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 42,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 42,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 38,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 37,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 32,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 33,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 34,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 35,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 43,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 44,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 53,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 56,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 43,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 33,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 6,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 7,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 7,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 8,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "high",
+        "ordinal": 9,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+        "reason": "Invocation did not produce a first answer."
+      },
+      {
+        "model": "gpt-6.2-astra",
+        "effort": "max",
+        "ordinal": 9,
+        "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
         "reason": "Invocation did not produce a first answer."
       }
     ]
@@ -230,6 +811,43 @@
     },
     {
       "model": "gpt-6.2-astra",
+      "effort": "high",
+      "count": 614,
+      "passed": 563,
+      "score": 91.69,
+      "answerFile": "answers/20261118-gpt-6.2-astra-high.jsonl",
+      "answerFileSha256": "f847f8a040bb22e027f8f43e905e8018468becb67d3837f2cae171926396eeec",
+      "formatErrorsCountedZero": 0,
+      "bySdk": {
+        "embedded-linux": {
+          "total": 569,
+          "passed": 524
+        },
+        "esp-idf": {
+          "total": 2,
+          "passed": 2
+        },
+        "zephyr": {
+          "total": 43,
+          "passed": 37
+        }
+      },
+      "meanSecondsIncludingGrading": 62.74,
+      "finished": "2026-11-19T15:50:59+08:00",
+      "tokens": {
+        "input_tokens": 3470535,
+        "cached_input_tokens": 1736320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 283104,
+        "reasoning_output_tokens": 45755
+      },
+      "transportWarningCases": 92,
+      "intermediateMessages": 0,
+      "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+      "medianSecondsIncludingGrading": 35.24
+    },
+    {
+      "model": "gpt-6.2-astra",
       "effort": "xhigh",
       "count": 614,
       "passed": 568,
@@ -264,6 +882,43 @@
       "intermediateMessages": 0,
       "sourceRun": "gpt62-sol-astra-low-xhigh-614-20261118",
       "medianSecondsIncludingGrading": 41.68
+    },
+    {
+      "model": "gpt-6.2-astra",
+      "effort": "max",
+      "count": 614,
+      "passed": 573,
+      "score": 93.32,
+      "answerFile": "answers/20261118-gpt-6.2-astra-max.jsonl",
+      "answerFileSha256": "10e0197b2fca9be77ebfaf3b710b56dcb9a6f43c9245560171976e0bc13ef31c",
+      "formatErrorsCountedZero": 0,
+      "bySdk": {
+        "embedded-linux": {
+          "total": 569,
+          "passed": 532
+        },
+        "esp-idf": {
+          "total": 2,
+          "passed": 2
+        },
+        "zephyr": {
+          "total": 43,
+          "passed": 39
+        }
+      },
+      "meanSecondsIncludingGrading": 82.57,
+      "finished": "2026-11-19T15:57:10+08:00",
+      "tokens": {
+        "input_tokens": 3486482,
+        "cached_input_tokens": 1532032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 720145,
+        "reasoning_output_tokens": 482746
+      },
+      "transportWarningCases": 100,
+      "intermediateMessages": 1,
+      "sourceRun": "gpt62-sol-astra-high-max-614-20261118",
+      "medianSecondsIncludingGrading": 44.19
     }
   ],
   "comparisons": {
@@ -307,11 +962,23 @@
           "deltaPassed": -5,
           "deltaPoints": -0.81
         },
+        "high": {
+          "baselinePassed": 560,
+          "baselineScore": 91.21,
+          "deltaPassed": 3,
+          "deltaPoints": 0.48
+        },
         "xhigh": {
           "baselinePassed": 564,
           "baselineScore": 91.86,
           "deltaPassed": 4,
           "deltaPoints": 0.65
+        },
+        "max": {
+          "baselinePassed": 564,
+          "baselineScore": 91.86,
+          "deltaPassed": 9,
+          "deltaPoints": 1.46
         }
       }
     }

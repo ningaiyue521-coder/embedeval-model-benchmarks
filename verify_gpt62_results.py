@@ -16,7 +16,7 @@ MODELS = {"gpt-6.2-sol": "GPT-6.2 Sol", "gpt-6.2-astra": "GPT-6.2 Astra"}
 EFFORTS = ("low", "high", "xhigh", "max")
 PUBLISHED_EFFORTS = {
     "gpt-6.2-sol": EFFORTS,
-    "gpt-6.2-astra": ("low", "xhigh"),
+    "gpt-6.2-astra": EFFORTS,
 }
 FIELDS = set(
     "round sourceRun model effort ordinal caseKey caseId attempt firstAnswer answerHash "
@@ -156,7 +156,7 @@ def verify(regrade=False):
     ], "Leaderboard source files")
     need(combined["models"] == leaderboard_models(previous["models"], groups), "Leaderboard scores or order")
     need(combined["modelsCount"] == len(combined["models"]) == 11
-         and combined["combinations"] == previous["combinations"] + len(groups) == 37
+         and combined["combinations"] == previous["combinations"] + len(groups) == 39
          and combined["denominatorPerCombination"] == len(cases)
          and combined["scoredAttempts"] == combined["combinations"] * len(cases), "Leaderboard totals")
     return {"ok": True, "models": combined["modelsCount"], "combinations": combined["combinations"],

@@ -2,9 +2,9 @@
 
 | 状态 | 报告 | 机器可读数据 |
 |---|---|---|
-| 主表 · 11 款模型、37 组档位 | [返回首页](../README.md) | [统一分母 614 的汇总](all-models-summary-20261118.json) |
+| 主表 · 11 款模型、39 组档位 | [返回首页](../README.md) | [统一分母 614 的汇总](all-models-summary-20261118.json) |
 | 当前档位排名 | [Low/XHigh 均分与 Max](./rankings-20261118.md) | [汇总数据](all-models-summary-20261118.json) |
-| GPT-6.2 成绩 · 6 组 × 614 题 | [Sol 与 Astra](gpt-6.2-sol-astra-20261118.md) | [JSON](gpt-6.2-sol-astra-20261118.json) |
+| GPT-6.2 成绩 · 8 组 × 614 题 | [Sol 与 Astra](gpt-6.2-sol-astra-20261118.md) | [JSON](gpt-6.2-sol-astra-20261118.json) |
 | 完整：4 组 × 614 题 | [GPT-6.1 Terra 四档](gpt-6.1-terra-four-efforts-20261027.md) | [JSON](gpt-6.1-terra-four-efforts-20261027.json) |
 | 完整：14 组 × 614 题 | [七模型 Low/Xhigh](seven-models-low-xhigh-20261008.md) | [JSON](seven-models-low-xhigh-20261008.json) |
 | 完整：3 组 × 614 题 | [三模型 Max](max-614-20261009.md) | [JSON](max-614-20261009.json) |

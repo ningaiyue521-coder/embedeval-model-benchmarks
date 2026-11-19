@@ -1,6 +1,6 @@
 # 首次答案
 
-40 份 JSONL 合计 **23,561 条记录**。其中七模型完整 Low / 极高总榜采用 8,596 份首答，后续三组 Max 采用 1,842 份首答；GPT-6.1 Terra 四档新增 2,456 份首答。新增 Grok 停止轮次包含 611 份首答和 3 条无最终答案的异常记录；其前 6 份答卷与历史样本重复，不作为新增模型答案计数。其他历史试跑、小样本或暂停记录不计入全量排名。
+42 份 JSONL 合计 **24,789 条记录**。其中七模型完整 Low / 极高总榜采用 8,596 份首答，后续三组 Max 采用 1,842 份首答；GPT-6.1 Terra 四档新增 2,456 份首答。新增 Grok 停止轮次包含 611 份首答和 3 条无最终答案的异常记录；其前 6 份答卷与历史样本重复，不作为新增模型答案计数。其他历史试跑、小样本或暂停记录不计入全量排名。
 
 `firstAnswer` 为首次最终答案，`checks` 为原始逐项规则结果。Grok 的 3 条异常记录中 `firstAnswer`、`answerHash` 和 `passed` 均为 `null`，不会冒充已评分失败答卷。
 
@@ -52,11 +52,13 @@
 
 ## 2026-11-18 GPT-6.2 成绩
 
-Sol 和 Astra 共 3,684 份首答。运行 `python verify_gpt62_results.py` 核验存档与主榜。
+Sol 和 Astra 共 4,912 份首答，覆盖两款模型各四档。运行 `python verify_gpt62_results.py` 核验存档与主榜。
 
 - [20261118-gpt-6.2-sol-low.jsonl](20261118-gpt-6.2-sol-low.jsonl) · 614 份。
 - [20261118-gpt-6.2-sol-high.jsonl](20261118-gpt-6.2-sol-high.jsonl) · 614 份。
 - [20261118-gpt-6.2-sol-xhigh.jsonl](20261118-gpt-6.2-sol-xhigh.jsonl) · 614 份。
 - [20261118-gpt-6.2-sol-max.jsonl](20261118-gpt-6.2-sol-max.jsonl) · 614 份。
 - [20261118-gpt-6.2-astra-low.jsonl](20261118-gpt-6.2-astra-low.jsonl) · 614 份。
+- [20261118-gpt-6.2-astra-high.jsonl](20261118-gpt-6.2-astra-high.jsonl) · 614 份。
 - [20261118-gpt-6.2-astra-xhigh.jsonl](20261118-gpt-6.2-astra-xhigh.jsonl) · 614 份。
+- [20261118-gpt-6.2-astra-max.jsonl](20261118-gpt-6.2-astra-max.jsonl) · 614 份。

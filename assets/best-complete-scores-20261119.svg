@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="540" viewBox="0 0 950 540" role="img" aria-labelledby="title desc">
+<title id="title">Best measured score per model</title>
+<desc id="desc">Scores out of 100, each based on 614 questions; effort is shown.</desc>
+<rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="25" y="32" font-family="sans-serif" font-size="20" font-weight="bold" fill="#18243b">Best measured score / 100 (614 questions)</text>
+<text x="25" y="73" font-family="sans-serif" font-size="15" fill="#18243b">GPT-6.2 Astra</text>
+<rect x="225" y="55" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="55" width="466.6" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="72" font-family="sans-serif" font-size="14" fill="#18243b">93.32 (max, 573/614)</text>
+<text x="25" y="113" font-family="sans-serif" font-size="15" fill="#18243b">GPT-6.2 Sol</text>
+<rect x="225" y="95" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="95" width="460.1" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="112" font-family="sans-serif" font-size="14" fill="#18243b">92.02 (max, 565/614)</text>
+<text x="25" y="153" font-family="sans-serif" font-size="15" fill="#18243b">GPT-6 Astra</text>
+<rect x="225" y="135" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="135" width="459.3" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="152" font-family="sans-serif" font-size="14" fill="#18243b">91.86 (xhigh, 564/614)</text>
+<text x="25" y="193" font-family="sans-serif" font-size="15" fill="#18243b">GPT-6.1 Sol</text>
+<rect x="225" y="175" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="175" width="459.3" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="192" font-family="sans-serif" font-size="14" fill="#18243b">91.86 (max, 564/614)</text>
+<text x="25" y="233" font-family="sans-serif" font-size="15" fill="#18243b">GPT-6 Sol</text>
+<rect x="225" y="215" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="215" width="448.7" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="232" font-family="sans-serif" font-size="14" fill="#18243b">89.74 (max, 551/614)</text>
+<text x="25" y="273" font-family="sans-serif" font-size="15" fill="#18243b">GPT-6.1 Terra</text>
+<rect x="225" y="255" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="255" width="442.2" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="272" font-family="sans-serif" font-size="14" fill="#18243b">88.44 (max, 543/614)</text>
+<text x="25" y="313" font-family="sans-serif" font-size="15" fill="#18243b">GPT-5.5</text>
+<rect x="225" y="295" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="295" width="440.6" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="312" font-family="sans-serif" font-size="14" fill="#18243b">88.11 (xhigh, 541/614)</text>
+<text x="25" y="353" font-family="sans-serif" font-size="15" fill="#18243b">Grok 4.7</text>
+<rect x="225" y="335" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="335" width="439.8" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="352" font-family="sans-serif" font-size="14" fill="#18243b">87.95 (high, 540/614)</text>
+<text x="25" y="393" font-family="sans-serif" font-size="15" fill="#18243b">GPT-5.6 Sol</text>
+<rect x="225" y="375" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="375" width="438.1" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="392" font-family="sans-serif" font-size="14" fill="#18243b">87.62 (max, 538/614)</text>
+<text x="25" y="433" font-family="sans-serif" font-size="15" fill="#18243b">GPT-6 Luna</text>
+<rect x="225" y="415" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="415" width="409.6" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="432" font-family="sans-serif" font-size="14" fill="#18243b">81.92 (high, 503/614)</text>
+<text x="25" y="473" font-family="sans-serif" font-size="15" fill="#18243b">GPT-5.6 Luna</text>
+<rect x="225" y="455" width="500" height="22" rx="4" fill="#dce5ef"/>
+<rect x="225" y="455" width="395.8" height="22" rx="4" fill="#2876be"/>
+<text x="735" y="472" font-family="sans-serif" font-size="14" fill="#18243b">79.15 (xhigh, 486/614)</text>
+</svg>
